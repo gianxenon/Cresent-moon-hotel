@@ -226,6 +226,7 @@ body {
 
 .subBar_a {
     width: fit-content;
+    margin-left: 5px;
 }
 
 .topBar_SectionTwo .subBar_a:hover {

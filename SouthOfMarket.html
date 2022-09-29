@@ -35,12 +35,12 @@
 							<a href="#">SoMa 2</a>
 						</div> -->
 					</li>
-					<li class="dropdown_button">
-						<a href="SouthOfMarket.html" class="btn_SouthOfMarket active">
+					<li class="dropdown_button" id="dropdown_button" onclick="dropMenu()">
+						<a class="btn_SouthOfMarket active">
 							SOUTH OF MARKET
 							<i class="fa fa-caret-down"></i>
 						</a>
-						<div class="dropdown-content">
+						<div class="dropdown-content" id="dropdown-content">
 							<a href="#">SoMa 1</a>
 							<a href="#">SoMa 2</a>
 						</div>
@@ -243,6 +243,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="contentss" id="contentss">
 				<div class="row row_sOmIntro">
 					<div class="column sOm_TxtIntro">
@@ -556,6 +557,14 @@
 		<!-- Script -->
 
 		<script>
+			function dropMenu() {
+				const dropdownMenu = document.getElementById("dropdown_button");
+				const dropdownContent = document.getElementById("dropdown-content");
+				dropdownContent.style.display == "none"
+					? (dropdownContent.style.display = "block")
+					: (dropdownContent.style.display = "none");
+			}
+
 			function menuIcon() {
 				const value = document.getElementById("container_id");
 				var displayss = document.getElementById("top_bar");
