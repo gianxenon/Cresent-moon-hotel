@@ -41,13 +41,15 @@
 							<i class="fa fa-caret-down"></i>
 						</a>
 						<div class="dropdown-content" id="dropdown-content">
-							<a href="#">SoMa 1</a>
-							<a href="#">SoMa 2</a>
+							<a class="soma active" id="soma" href="SouthOfMarket.html"
+								>Soma-One-BR</a
+							>
+							<a id="soma" href="soma2.html">Soma-Two- BR </a>
 						</div>
 					</li>
-					<li><a>TWO SERENDRA</a></li>
+					<li><a href="TwoSerendra.html">TWO SERENDRA</a></li>
 					<li>
-						<a> HIGH STREET SOUTH CORPORATE PLAZA </a>
+						<a>OTHER PROPERTIES</a>
 					</li>
 				</ul>
 				<div id="container_id" class="container" onclick="menuIcon(this)">
@@ -63,17 +65,26 @@
 						<h3>Check our available studios:</h3>
 					</div>
 					<div class="column topBar_SectionTwo">
-						<a class="subBar_a">SOMA ONE-BR/STUDIO (1)</a>
-						<a class="subBar_a" href="#contentss">SOMA ONE-BR/STUDIO (2)</a>
-						<a class="subBar_a">SOMA ONE-BR/STUDIO (3)</a>
-						<a class="subBar_a">SOMA ONE-BR/STUDIO (4)</a>
-						<a class="subBar_a">SOMA ONE-BR/STUDIO (5)</a>
-						<a class="subBar_a">SOMA ONE-BR/STUDIO (6)</a>
+						<a class="subBar_a" id="soma_1" onclick="subBarBtn(this.id)">
+							SOMA ONE-BR/STUDIO (1)</a
+						>
+						<a class="subBar_a" id="soma_2" onclick="subBarBtn(this.id)"
+							>SOMA ONE-BR/STUDIO (2)</a
+						>
+						<a class="subBar_a" id="soma_3" onclick="subBarBtn(this.id)"
+							>SOMA ONE-BR/STUDIO (3)</a
+						>
+						<a class="subBar_a" id="soma_4" onclick="subBarBtn(this.id)"
+							>SOMA ONE-BR/STUDIO (4)</a
+						>
+						<a class="subBar_a" id="soma_5" onclick="subBarBtn(this.id)"
+							>SOMA ONE-BR/STUDIO (5)</a
+						>
 					</div>
 				</div>
 			</div>
 
-			<div class="southOfMarket_intro">
+			<div class="row southOfMarket_intro">
 				<div class="column sOm_TxtIntro">
 					<h1>South of Market</h1>
 					<p>
@@ -93,461 +104,418 @@
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7723.8303918524125!2d121.05196400000001!3d14.546842000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb54626bde471e7f9!2sSouth%20of%20Market%20Private%20Residences!5e0!3m2!1sen!2sph!4v1663512821344!5m2!1sen!2sph"
 						width="100%"
-						height="400"
+						height="320"
 						style="border: 0; margin-top: 20px"
 						allowfullscreen=""
 						loading="lazy"
 						referrerpolicy="no-referrer-when-downgrade"
 					></iframe>
 				</div>
+
 				<div class="column sOm_ImgBox">
-					<div class="row_sOm_ImgBox">
-						<div class="row row_content" id="row_content">
-							<div class="column right_row3">
-								<div class="column row_one">
-									<img
-										src="/main_page/assets/s1.jpg"
-										style="object-fit: cover"
-										width="100%"
-										height="100%"
-									/>
-								</div>
-								<div class="column row_one">
-									<img
-										src="/main_page/assets/s2.jpg"
-										style="object-fit: cover"
-										width="100%"
-										height="100%"
-									/>
-								</div>
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
 
-								<div class="column row_one">
-									<img
-										src="/main_page/assets/s3.jpg"
-										style="object-fit: cover"
-										width="100%"
-										height="100%"
-									/>
-								</div>
-								<div class="column row_one">
-									<img
-										src="/main_page/assets/s4.jpg"
-										style="object-fit: cover"
-										width="100%"
-										height="100%"
-									/>
-								</div>
-								<div class="column row_one">
-									<img
-										src="/main_page/assets/s05.jpg"
-										style="object-fit: cover"
-										width="100%"
-										height="100%"
-									/>
-								</div>
-								<div class="column row_one">
-									<img
-										src="/main_page/assets/s6.jpg"
-										style="object-fit: cover"
-										width="100%"
-										height="100%"
-									/>
-								</div>
-								<!-- <div class="column row_one"></div>
-										<div class="column row_two"></div>
-										<div class="column row_three"></div>
-										<div class="column row_four"></div>
-										<div class="column row_five"></div>
-										<div class="column row_six"></div> -->
-							</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s2.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s3.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s4.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s05.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s6.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="contentss" id="contentss">
-				<div class="row row_sOmIntro">
-					<div class="column sOm_TxtIntro">
-						<h1 style="font-size: 50px; margin-bottom: 20px">
-							SOMA ONE-BR/STUDIO (1)
-						</h1>
-						<h3>
-							The ONE BEDROOM/STUDIO units offer convenience and efficiency.
-							<br /><br />
-							The units are around 40 sq. m. in floor area, fully furnished,
-							with air-condtioner, a kitchen with range, range hood,
-							refrigerator, microwave oven, and kitchen accessories. Linens and
-							towels are provided.<br />
-							<br />The units are fitted with a balcony with a washing machine
-							with spin dryer. Units come with cable TV and Wi-Fi Internet
-							access.
-						</h3>
-					</div>
+			<div id="soma_one" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro1">
+					<h1>SOMA ONE-BR/STUDIO (1)</h1>
+					<p>
+						The ONE BEDROOM/STUDIO units offer convenience and efficiency.
+						<br /><br />
+						The units are around 40 sq. m. in floor area, fully furnished, with
+						air-condtioner, a kitchen with range, range hood, refrigerator,
+						microwave oven, and kitchen accessories. Linens and towels are
+						provided.<br />
+						<br />The units are fitted with a balcony with a washing machine
+						with spin dryer. Units come with cable TV and Wi-Fi Internet access.
+					</p>
+				</div>
 
-					<div class="column sOm_ImgBoxs">
-						<div class="row_sOm_ImgBox">
-							<div class="row row_content" id="row_content">
-								<div class="column right_row3">
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/s1br_livingroom.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/s1br_livingroom2.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br_livingroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br_livingroom2.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
 
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/s1br_diningroom.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/s1br_bedroom.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/s1br_kitchenroom.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/s1br_bathroom.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-								</div>
-							</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br_diningroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br_bedroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br_kitchenroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br_bathroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="contentss" id="contentss">
-				<div class="row row_sOmIntro">
-					<div class="column sOm_TxtIntro">
-						<h1 style="font-size: 50px; margin-bottom: 20px">
-							SOMA ONE-BR/STUDIO (2)
-						</h1>
-						<h3>
-							The ONE BEDROOM/STUDIO units offer convenience and efficiency.
-							<br /><br />
-							The units are around 40 sq. m. in floor area, fully furnished,
-							with air-condtioner, a kitchen with range, range hood,
-							refrigerator, microwave oven, and kitchen accessories. Linens and
-							towels are provided.<br />
-							<br />The units are fitted with a balcony with a washing machine
-							with spin dryer. Units come with cable TV and Wi-Fi Internet
-							access.
-						</h3>
-					</div>
-					<div class="column sOm_ImgBoxs">
-						<div class="row_sOm_ImgBox">
-							<div class="row row_content" id="row_content">
-								<div class="column right_row3">
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/1802S_Living.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/1802S_Living1.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
+			<div id="soma_two" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro2">
+					<h1>SOMA ONE-BR/STUDIO (2)</h1>
+					<p>
+						The ONE BEDROOM/STUDIO units offer convenience and efficiency.
+						<br /><br />
+						The units are around 40 sq. m. in floor area, fully furnished, with
+						air-condtioner, a kitchen with range, range hood, refrigerator,
+						microwave oven, and kitchen accessories. Linens and towels are
+						provided.<br />
+						<br />The units are fitted with a balcony with a washing machine
+						with spin dryer. Units come with cable TV and Wi-Fi Internet access.
+					</p>
+				</div>
 
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/1802S_Dining.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/1802S_Bed.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/1802S_Bathroom.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/1802S_Kitchen.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-								</div>
-							</div>
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/1802S_Living.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/1802S_Living1.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/1802S_Dining.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/1802S_Bed.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/1802S_Bathroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/1802S_Kitchen.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="contentss" id="contentss">
-				<div class="row row_sOmIntro">
-					<div class="column sOm_TxtIntro">
-						<h1 style="font-size: 50px; margin-bottom: 20px">
-							SOMA ONE-BR/STUDIO (3)
-						</h1>
-						<h3>
-							The ONE BEDROOM/STUDIO units offer convenience and efficiency.<br /><br />
-							The units are around 40 sq. m. in floor area, fully furnished,
-							with air-condtioner, a kitchen with range, range hood,
-							refrigerator, microwave oven, and kitchen accessories. Linens and
-							towels are provided.
-							<br /><br />The units are fitted with a balcony with a washing
-							machine with spin dryer. Units come with cable TV and Wi-Fi
-							Internet access.
-						</h3>
-					</div>
-					<div class="column sOm_ImgBoxs">
-						<div class="row_sOm_ImgBox">
-							<div class="row row_content" id="row_content">
-								<div class="column right_row3">
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/s1br3_livng_room.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/s1br3_living_room2.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
+			<div id="soma_three" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro3">
+					<h1>SOMA ONE-BR/STUDIO (3)</h1>
+					<p>
+						The ONE BEDROOM/STUDIO units offer convenience and efficiency.
+						<br /><br />
+						The units are around 40 sq. m. in floor area, fully furnished, with
+						air-condtioner, a kitchen with range, range hood, refrigerator,
+						microwave oven, and kitchen accessories. Linens and towels are
+						provided.<br />
+						<br />The units are fitted with a balcony with a washing machine
+						with spin dryer. Units come with cable TV and Wi-Fi Internet access.
+					</p>
+				</div>
 
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/s1br3_dining_area.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/s1br3_kitchen.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/s1br3_1807S_-_Bedroom_WallFrame_2.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/s1br3_bathroom.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-								</div>
-							</div>
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br3_livng_room.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br3_living_room2.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br3_dining_area.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br3_kitchen.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br3_1807S_-_Bedroom_WallFrame_2.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br3_bathroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="contentss" id="contentss">
-				<div class="row row_sOmIntro">
-					<div class="column sOm_TxtIntro">
-						<h1 style="font-size: 50px; margin-bottom: 20px">
-							SOMA ONE-BR/STUDIO (4)
-						</h1>
-						<h3>
-							The ONE BEDROOM/STUDIO units offer convenience and efficiency.<br /><br />
-							The units are around 40 sq. m. in floor area, fully furnished,
-							with air-condtioner, a kitchen with range, range hood,
-							refrigerator, microwave oven, and kitchen accessories. Linens and
-							towels are provided.
-							<br /><br />The units are fitted with a balcony with a washing
-							machine with spin dryer. Units come with cable TV and Wi-Fi
-							Internet access.
-						</h3>
-					</div>
-					<div class="column sOm_ImgBox">
-						<div class="row_sOm_ImgBox">
-							<div class="row row_content" id="row_content">
-								<div class="column right_row3">
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/3509n-Living Area1.JPG"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/3509n-Living Area2.JPG"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
+			<div id="soma_four" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro4">
+					<h1>SOMA ONE-BR/STUDIO (4)</h1>
+					<p>
+						The ONE BEDROOM/STUDIO units offer convenience and efficiency.
+						<br /><br />
+						The units are around 40 sq. m. in floor area, fully furnished, with
+						air-condtioner, a kitchen with range, range hood, refrigerator,
+						microwave oven, and kitchen accessories. Linens and towels are
+						provided.<br />
+						<br />The units are fitted with a balcony with a washing machine
+						with spin dryer. Units come with cable TV and Wi-Fi Internet access.
+					</p>
+				</div>
 
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/3509n-Dining Area - Copy.JPG"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/3509n-Kitchen1.JPG"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/3509N_bedroom.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/3509n-Bathroom.JPG"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-								</div>
-							</div>
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/3509n-Living Area1.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/3509n-Living Area2.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/3509n-Dining Area - Copy.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/3509n-Kitchen1.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/3509N_bedroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/3509n-Bathroom.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="contentss" id="contentss">
-				<div class="row row_sOmIntro">
-					<div class="column sOm_TxtIntro">
-						<h1 style="font-size: 50px; margin-bottom: 20px">
-							SOMA ONE-BR/STUDIO (5)
-						</h1>
-						<h3>
-							The ONE BEDROOM/STUDIO units offer convenience and efficiency.<br /><br />
-							The units are around 40 sq. m. in floor area, fully furnished,
-							with air-condtioner, a kitchen with range, range hood,
-							refrigerator, microwave oven, and kitchen accessories. Linens and
-							towels are provided.
-							<br /><br />The units are fitted with a balcony with a washing
-							machine with spin dryer. Units come with cable TV and Wi-Fi
-							Internet access.
-						</h3>
-					</div>
-					<div class="column sOm_ImgBoxs">
-						<div class="row_sOm_ImgBox">
-							<div class="row row_content" id="row_content">
-								<div class="column right_row3">
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/3304AS_Living.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/3304AS_Dining.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
+			<div id="soma_five" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro5">
+					<h1>SOMA ONE-BR/STUDIO (5)</h1>
+					<p>
+						The ONE BEDROOM/STUDIO units offer convenience and efficiency.
+						<br /><br />
+						The units are around 40 sq. m. in floor area, fully furnished, with
+						air-condtioner, a kitchen with range, range hood, refrigerator,
+						microwave oven, and kitchen accessories. Linens and towels are
+						provided.<br />
+						<br />The units are fitted with a balcony with a washing machine
+						with spin dryer. Units come with cable TV and Wi-Fi Internet access.
+					</p>
+				</div>
 
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/3304AS_Kitchen.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/3304AS_Bed.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/3304AS_Bathroom.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-									<div class="column row_one">
-										<img
-											src="/main_page/assets/3304AS_Laundry.jpg"
-											style="object-fit: cover"
-											width="100%"
-											height="100%"
-										/>
-									</div>
-								</div>
-							</div>
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/3304AS_Living.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/3304AS_Dining.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/3304AS_Kitchen.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/3304AS_Bed.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/3304AS_Bathroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/3304AS_Laundry.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
 						</div>
 					</div>
 				</div>
@@ -557,12 +525,47 @@
 		<!-- Script -->
 
 		<script>
+			function subBarBtn(x) {
+				var v = x;
+				var sOm_TxtIntro1 = document.getElementById("sOm_TxtIntro1");
+				var sOm_TxtIntro2 = document.getElementById("sOm_TxtIntro2");
+				var sOm_TxtIntro3 = document.getElementById("sOm_TxtIntro3");
+				var sOm_TxtIntro4 = document.getElementById("sOm_TxtIntro4");
+				var sOm_TxtIntro5 = document.getElementById("sOm_TxtIntro5");
+				switch (v.trim()) {
+					case "soma_1":
+						sOm_TxtIntro1.scrollIntoView({ behavior: "smooth" });
+						break;
+					case "soma_2":
+						sOm_TxtIntro2.scrollIntoView({ behavior: "smooth" });
+						break;
+					case "soma_3":
+						sOm_TxtIntro3.scrollIntoView({ behavior: "smooth" });
+						break;
+					case "soma_4":
+						sOm_TxtIntro4.scrollIntoView({ behavior: "smooth" });
+						break;
+					case "soma_5":
+						sOm_TxtIntro5.scrollIntoView({ behavior: "smooth" });
+						break;
+					default:
+						text = "I have never heard of that fruit...";
+				}
+			}
+
 			function dropMenu() {
-				const dropdownMenu = document.getElementById("dropdown_button");
 				const dropdownContent = document.getElementById("dropdown-content");
 				dropdownContent.style.display == "none"
 					? (dropdownContent.style.display = "block")
 					: (dropdownContent.style.display = "none");
+			}
+			function myFunction() {
+				var displayss = document.getElementById("inquiry_questioniere");
+				if (displayss.style.display == "none") {
+					displayss.style.display = "block";
+				} else {
+					displayss.style.display = "none";
+				}
 			}
 
 			function menuIcon() {
@@ -581,7 +584,9 @@
 			}
 
 			function mySAdwasd(x) {
+				const dropdownMenu = document.getElementById("dropdownButton");
 				var ul_class = document.getElementById("ul_class");
+				const dropdownContent = document.getElementById("dropdown-content");
 				if (x.matches) {
 					// If media query matches
 					const value = document.getElementById("container_id");
@@ -597,8 +602,10 @@
 					} else {
 						displayss.style.display = "90px";
 						ul_class.style.display = "none";
+						dropdownContent.style.display = "none";
 					}
 				} else {
+					dropdownContent.style.display = "none";
 					ul_class.style.display = "block";
 				}
 			}

@@ -32,8 +32,6 @@ body {
     overflow-y: auto;
 }
 
-
-
 .top_bar {
     width: 100%;
     height: 90px;
@@ -65,10 +63,7 @@ body {
     display: block;
     color: white;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 40px 30px 40px 30px;
     text-decoration: none;
     font-size: 16px;
     font-weight: 700
@@ -149,7 +144,9 @@ body {
     top: 100%;
     outline: none;
     background-color: rgba(0, 132, 255, 0.904);
-    min-width: 170px;
+    /* rgba(0, 132, 255, 0.904) */
+    min-width: 230px;
+    height: fit-content;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     margin: 0px;
     border-bottom-left-radius: 10px;
@@ -158,17 +155,64 @@ body {
     z-index: 1;
 }
 
-/* Style the links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: black;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+.column {
+    float: left;
+    width: 100%;
+    padding: 24px;
+
 }
 
-.dropdown_button:hover .dropdown-content {
+
+.row:after {
+
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+#soma {
+    height: fit-content;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 20px 0px 20px 0px;
+    color: wheat;
+    text-decoration: none;
     display: block;
+    text-align: center;
+    background-color: rgba(0, 132, 255, 0.904);
+}
+
+#soma.active {
+    background-color: antiquewhite;
+    color: #000;
+}
+
+.btn_SouthOfMarket.active {
+    background-color: antiquewhite;
+    color: #000;
+}
+
+#soma2 {
+    height: fit-content;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 20px 0px 20px 0px;
+    color: wheat;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: rgba(0, 132, 255, 0.904);
+}
+
+#soma2.active {
+    background-color: antiquewhite;
+    color: #000;
+}
+
+.tw_seren.active {
+    background-color: antiquewhite;
+    color: #000;
 }
 
 .sub_topBar {
@@ -180,23 +224,6 @@ body {
 
 }
 
-/* Create three equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 100%;
-    padding: 24px;
-
-}
-
-
-
-/* Clear floats after the columns */
-.row_subTopBar:after {
-    content: "";
-    display: table;
-    clear: both;
-
-}
 
 .topBar_Section {
     width: fit-content;
@@ -208,7 +235,6 @@ body {
 
 .topBar_SectionTwo {
     width: fit-content;
-
     height: 100%;
 }
 
@@ -224,9 +250,19 @@ body {
 
 }
 
-.subBar_a {
-    width: fit-content;
-    margin-left: 5px;
+
+
+
+
+.topBar_SectionTwo .subBar_a {
+    font-size: 12px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+sup {
+    vertical-align: top;
+    font-size: 0.6em;
 }
 
 .topBar_SectionTwo .subBar_a:hover {
@@ -234,66 +270,46 @@ body {
 }
 
 
+/* contents */
 
-.content {
-    width: 100%;
-    height: 80%;
-
-}
 
 .southOfMarket_intro {
     width: 100%;
     height: 100%;
-    z-index: 2;
+    padding-top: 50px;
 }
 
 .sOm_TxtIntro {
     width: 50%;
     height: 100%;
     padding-left: 170px;
-    padding-top: 100px;
 
 }
 
 .sOm_TxtIntro h1 {
-    font-size: 3.5vw;
+    font-size: 60px;
     color: antiquewhite;
     font-weight: 700;
 }
 
-.sOm_TxtIntro p {
-    font-size: 16px;
+p {
+    font-size: 21px;
     color: antiquewhite;
 }
 
 .sOm_ImgBox {
+    float: left;
     height: fit-content;
     width: 50%;
     padding: 0;
 
-
 }
-
-.row_sOm_ImgBox {
-
-    width: 100%;
-    height: fit-content;
-}
-
 
 #row_content {
     width: 100%;
     height: fit-content;
-    float: left;
     border-radius: 15px;
-    margin: 85px 0px 85px 0px;
-
-}
-
-.right_row3 {
-    width: 100%;
-    height: 100%;
-    padding: 10px 60px;
+    margin: 85px 0px 0px 0px;
 
 }
 
@@ -306,18 +322,14 @@ body {
     padding: 10PX;
 }
 
-.contentss {
+.soma_one {
     width: 100%;
-    min-height: 80%;
+    height: 100%;
+    padding-top: 100px;
 
 }
 
-
-
-.sOm_ImgBoxs {
-    height: fit-content;
-    width: 50%;
-    padding: 0;
-
-
+.soma_one h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
 }

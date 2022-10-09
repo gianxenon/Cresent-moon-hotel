@@ -25,7 +25,7 @@
 				<ul class="ul_class" id="ul_class">
 					<li><a href="index.html" class="btn_home">HOME</a></li>
 					<li>
-						<a href="belagio1.html">
+						<a class="btn_home active" href="belagio1.html">
 							BELLAGIO 1
 							<!-- <i class="fa fa-caret-down"></i> -->
 						</a>
@@ -34,19 +34,19 @@
 							<a href="#">SoMa 2</a>
 						</div> -->
 					</li>
-					<li class="dropdown_button">
-						<a href="SouthOfMarket.html" class="btn_SouthOfMarket active">
+					<li class="dropdown_button" onclick="dropMenu()">
+						<a>
 							SOUTH OF MARKET
 							<i class="fa fa-caret-down"></i>
 						</a>
-						<div class="dropdown-content">
-							<a href="#">SoMa 1</a>
-							<a href="#">SoMa 2</a>
+						<div class="dropdown-content" id="dropdown-content">
+							<a id="soma" href="SouthOfMarket.html">Soma-One-BR</a>
+							<a id="soma" href="#">Soma-Two- BR</a>
 						</div>
 					</li>
 					<li><a>TWO SERENDRA</a></li>
 					<li>
-						<a> HIGH STREET SOUTH CORPORATE PLAZA </a>
+						<a>OTHER PROPERTIES</a>
 					</li>
 				</ul>
 				<div id="container_id" class="container" onclick="menuIcon(this)">
@@ -88,9 +88,7 @@
 									<li>Fully furnished</li>
 									<li>Hot and cold shower</li>
 									<li>Complete kitchen utensils</li>
-									<li>
-										Two brand new PANASONIC split type inverter air conditioners
-									</li>
+									<li>PANASONIC split type inverter air conditioners</li>
 								</ul>
 							</div>
 
@@ -172,6 +170,21 @@
 		</div>
 
 		<script>
+			function dropMenu() {
+				const dropdownContent = document.getElementById("dropdown-content");
+				dropdownContent.style.display == "none"
+					? (dropdownContent.style.display = "block")
+					: (dropdownContent.style.display = "none");
+			}
+			function myFunction() {
+				var displayss = document.getElementById("inquiry_questioniere");
+				if (displayss.style.display == "none") {
+					displayss.style.display = "block";
+				} else {
+					displayss.style.display = "none";
+				}
+			}
+
 			function menuIcon() {
 				const value = document.getElementById("container_id");
 				var displayss = document.getElementById("top_bar");
@@ -188,7 +201,9 @@
 			}
 
 			function mySAdwasd(x) {
+				const dropdownMenu = document.getElementById("dropdownButton");
 				var ul_class = document.getElementById("ul_class");
+				const dropdownContent = document.getElementById("dropdown-content");
 				if (x.matches) {
 					// If media query matches
 					const value = document.getElementById("container_id");
@@ -204,8 +219,10 @@
 					} else {
 						displayss.style.display = "90px";
 						ul_class.style.display = "none";
+						dropdownContent.style.display = "none";
 					}
 				} else {
+					dropdownContent.style.display = "none";
 					ul_class.style.display = "block";
 				}
 			}

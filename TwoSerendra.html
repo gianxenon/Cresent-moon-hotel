@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> </title>
+		<link rel="stylesheet" href="styles/southOfMarket.css" />
+		<link rel="stylesheet" href="styles/media_query/southOfMarket_query.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+
+	<body>
+		<div class="body_container">
+			<div class="top_bar" id="top_bar">
+				<img
+					class="index_logo"
+					src="/main_page/assets/Crescent.png"
+					width="90px"
+				/>
+				<h2 class="company_name_text">
+					CRESCENT CONDO AND OFFICE RENTALS INC.
+				</h2>
+
+				<ul class="ul_class" id="ul_class">
+					<li><a href="index.html" class="btn_home">HOME</a></li>
+					<li>
+						<a href="belagio1.html"> BELLAGIO 1 </a>
+					</li>
+					<li class="dropdown_button" id="dropdown_button" onclick="dropMenu()">
+						<a class="btn_SouthOfMarket">
+							SOUTH OF MARKET
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-content" id="dropdown-content">
+							<a class="soma" id="soma" href="SouthOfMarket.html"
+								>Soma-One-BR</a
+							>
+							<a id="soma" href="soma2.html">Soma-Two- BR </a>
+						</div>
+					</li>
+					<li>
+						<a class="tw_seren active"> TWO SERENDRA </a>
+					</li>
+					<li>
+						<a>OTHER PROPERTIES</a>
+					</li>
+				</ul>
+				<div id="container_id" class="container" onclick="menuIcon(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</div>
+			<!-- End of Navigation Bar -->
+			<div class="sub_topBar">
+				<div class="row row_subTopBar">
+					<div class="column topBar_Section">
+						<h3>Check our available studios:</h3>
+					</div>
+					<div class="column topBar_SectionTwo">
+						<a class="subBar_a" id="soma_4" onclick="subBarBtn(this.id)"
+							>SEQUOIA 2506</a
+						>
+						<a class="subBar_a" id="soma_1" onclick="subBarBtn(this.id)">
+							SEQUOIA 52<sup>nd</sup> FLOOR</a
+						>
+						<a class="subBar_a" id="soma_2" onclick="subBarBtn(this.id)"
+							>SEQUOIA 29<sup>th</sup> FLOOR</a
+						>
+						<a class="subBar_a" id="soma_3" onclick="subBarBtn(this.id)"
+							>SEQUOIA 911 FLOOR</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<div class="row southOfMarket_intro">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro">
+					<h1>SEQUOIA 2506</h1>
+
+					<dl style="font-size: 26px; margin-top: 20px">
+						<dt>Rental Rate:</dt>
+						<dd style="padding-left: 40px">
+							- <span style="color: red; font-weight: 700">PHP 100,000</span>
+						</dd>
+						<dt>Address</dt>
+						<dd style="padding-left: 40px">
+							- Sequoia Serendra II Mckinley Parkway, Bonifacio Global City,
+							Taguig City
+						</dd>
+						<dt>Floor Area:</dt>
+						<dd style="padding-left: 40px">- 90 sq.m.</dd>
+						<dt style="margin-top: 20px">Additional details:</dt>
+						<dd>
+							<ul style="padding-left: 40px; margin-top: 20px">
+								<li>No. : of Bedroom:2</li>
+								<li>No. : of Bathroom: 2</li>
+								<li>Fully furnished</li>
+								<li>Rent inclusive of condo dues</li>
+								<li>Minimum of 6 months lease</li>
+								<li>Airconditioned living room And bedrooms</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+
+				<div class="column sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/tw-SALA.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/tw-salaset.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/tw-DINING.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/tw-KITCHEN.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/tw-BEDROOM.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/tw-BATHROOM.jpg"
+								style="object-fit: cover, contain"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="soma_one" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro1">
+					<h1>SEQUOIA 52<sup>nd</sup> FLOOR</h1>
+
+					<dl style="font-size: 26px; margin-top: 20px">
+						<dt>Rental Rate:</dt>
+						<dd style="padding-left: 40px">
+							-
+							<span style="color: red; font-weight: 700">PHP 70,000</span>
+							(negotiable)
+						</dd>
+						<dt>Address</dt>
+						<dd style="padding-left: 40px">
+							- Unit 5208 Sequoia Serendra II, Mckinley Parkway, BGC, Taguig
+							City
+						</dd>
+						<dt>Floor Area:</dt>
+						<dd style="padding-left: 40px">- 67 sq.m.</dd>
+
+						<dt style="margin-top: 20px">Additional details:</dt>
+						<dd>
+							<ul style="padding-left: 40px; margin-top: 20px">
+								<li>No. : of Bedroom: 1</li>
+								<li>Fully furnished</li>
+								<li>Newly Renovated</li>
+								<li>Minimum of 1 year lease</li>
+								<li>Air-conditioned room</li>
+								<li>High Floor</li>
+								<li>City View</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br_livingroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br_livingroom2.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br_diningroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br_bedroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br_kitchenroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br_bathroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="soma_two" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro2">
+					<h1>SEQUOIA 29<sup>th</sup> FLOOR</h1>
+
+					<dl style="font-size: 26px; margin-top: 20px">
+						<dt>Rental Rate:</dt>
+						<dd style="padding-left: 40px">
+							-
+							<span style="color: red; font-weight: 700">PHP 75,000</span>
+							(negotiable)
+						</dd>
+						<dt>Address</dt>
+						<dd style="padding-left: 40px">
+							- Unit 2915 Sequoia Serendra II, Mckinley Parkway, BGC, Taguig
+							City * 67 square meter
+						</dd>
+						<dt>Floor Area:</dt>
+						<dd style="padding-left: 40px">- 67 sq.m.</dd>
+
+						<dt style="margin-top: 20px">Additional details:</dt>
+						<dd>
+							<ul style="padding-left: 40px; margin-top: 20px">
+								<li>No. : of Bedroom:1</li>
+								<li>Fully furnished</li>
+								<li>Newly Renovated</li>
+								<li>Mid-zone pop out unit</li>
+								<li>Inclusive of association dues</li>
+								<li>Airconditioned room</li>
+								<li>Inclusive of 1 Parking</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/S29_living.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/S29_dining.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/S29_kitchen.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/S29_corner.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/S29_bedroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/S29_bathroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="soma_three" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro3">
+					<h1>SEQUOIA 911 FLOOR</h1>
+
+					<dl style="font-size: 26px; margin-top: 20px">
+						<dt>Rental Rate:</dt>
+						<dd style="padding-left: 40px">
+							- <span style="color: red; font-weight: 700">PHP 150,000</span>
+						</dd>
+						<dt>Address</dt>
+						<dd style="padding-left: 40px">
+							- Sequoia Serendra II Mckinley Parkway, Bonifacio Global City,
+							Taguig City
+						</dd>
+						<dt>Floor Area:</dt>
+						<dd style="padding-left: 40px">- 125 sq.m.</dd>
+
+						<dt style="margin-top: 20px">Additional details:</dt>
+						<dd>
+							<ul style="padding-left: 40px; margin-top: 20px">
+								<li>No. : of Bedroom:3</li>
+								<li>No. : of Bathroom: 3</li>
+								<li>Fully furnished</li>
+								<li>Rent inclusive of condo dues</li>
+								<li>Minimum of 1 year lease</li>
+								<li>With maid's room</li>
+								<li>Infinity view</li>
+								<li>Airconditioned living room and bedrooms</li>
+								<li>Inclusive of 2 Parking</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1br3_living_room2.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/911_TABLEDINING.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/911-KITCHEN.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/911-BEDROOM.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/911-Sofaset.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/911-COMFORTROOM.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Script -->
+
+		<script>
+			function subBarBtn(x) {
+				var v = x;
+				var sOm_TxtIntro1 = document.getElementById("sOm_TxtIntro1");
+				var sOm_TxtIntro2 = document.getElementById("sOm_TxtIntro2");
+				var sOm_TxtIntro3 = document.getElementById("sOm_TxtIntro3");
+				var sOm_TxtIntro4 = document.getElementById("sOm_TxtIntro");
+				var sOm_TxtIntro5 = document.getElementById("sOm_TxtIntro5");
+				switch (v.trim()) {
+					case "soma_1":
+						sOm_TxtIntro1.scrollIntoView({ behavior: "smooth" });
+						break;
+					case "soma_2":
+						sOm_TxtIntro2.scrollIntoView({ behavior: "smooth" });
+						break;
+					case "soma_3":
+						sOm_TxtIntro3.scrollIntoView({ behavior: "smooth" });
+						break;
+					case "soma_4":
+						sOm_TxtIntro4.scrollIntoView({ behavior: "smooth" });
+						break;
+					case "soma_5":
+						sOm_TxtIntro5.scrollIntoView({ behavior: "smooth" });
+						break;
+					default:
+						text = "I have never heard of that fruit...";
+				}
+			}
+
+			function dropMenu() {
+				const dropdownContent = document.getElementById("dropdown-content");
+				dropdownContent.style.display == "none"
+					? (dropdownContent.style.display = "block")
+					: (dropdownContent.style.display = "none");
+			}
+			function myFunction() {
+				var displayss = document.getElementById("inquiry_questioniere");
+				if (displayss.style.display == "none") {
+					displayss.style.display = "block";
+				} else {
+					displayss.style.display = "none";
+				}
+			}
+
+			function menuIcon() {
+				const value = document.getElementById("container_id");
+				var displayss = document.getElementById("top_bar");
+				var ul_class = document.getElementById("ul_class");
+				value.classList.toggle("change");
+				if (value.className == "container change") {
+					displayss.style.height = "auto";
+					displayss.style.width = "100%";
+					ul_class.style.display = "block";
+				} else {
+					ul_class.style.display = "none";
+					displayss.style.height = "90px";
+				}
+			}
+
+			function mySAdwasd(x) {
+				const dropdownMenu = document.getElementById("dropdownButton");
+				var ul_class = document.getElementById("ul_class");
+				const dropdownContent = document.getElementById("dropdown-content");
+				if (x.matches) {
+					// If media query matches
+					const value = document.getElementById("container_id");
+
+					var displayss = document.getElementById("top_bar");
+
+					if (value.className == "container change") {
+						// alert("im here now");
+						ul_class.style.display = "block";
+						ul_class.style.display = "none";
+						displayss.style.height = "90px";
+						value.classList.toggle("change");
+					} else {
+						displayss.style.display = "90px";
+						ul_class.style.display = "none";
+						dropdownContent.style.display = "none";
+					}
+				} else {
+					dropdownContent.style.display = "none";
+					ul_class.style.display = "block";
+				}
+			}
+
+			var x = window.matchMedia("(max-width:1240px)");
+
+			mySAdwasd(x); // Call listener function at run time
+
+			x.addListener(mySAdwasd); // Attach listener function on state changes
+		</script>
+	</body>
+</html>

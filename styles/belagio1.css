@@ -58,6 +58,7 @@ body {
 
 }
 
+
 .top_bar ul li a {
     display: block;
     color: white;
@@ -70,6 +71,7 @@ body {
     font-size: 16px;
     font-weight: 700
 }
+
 
 .index_logo {
     position: absolute;
@@ -140,13 +142,16 @@ body {
     margin: 0px;
 }
 
+
 .dropdown_button .dropdown-content {
     display: none;
     position: absolute;
     top: 100%;
     outline: none;
     background-color: rgba(0, 132, 255, 0.904);
-    min-width: 170px;
+    /* rgba(0, 132, 255, 0.904) */
+    min-width: 230px;
+    height: fit-content;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     margin: 0px;
     border-bottom-left-radius: 10px;
@@ -155,22 +160,20 @@ body {
     z-index: 1;
 }
 
-/* Style the links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: black;
+
+#soma {
+    height: fit-content;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 20px 0px 20px 0px;
+    color: wheat;
     text-decoration: none;
     display: block;
-    text-align: left;
-
+    text-align: center;
+    background-color: rgba(0, 132, 255, 0.904);
 }
 
-.dropdown_button:hover .dropdown-content {
 
-    display: block;
-
-
-}
 
 .content {
 

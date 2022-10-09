@@ -141,7 +141,9 @@ body {
     top: 100%;
     outline: none;
     background-color: rgba(0, 132, 255, 0.904);
-    min-width: 170px;
+    /* rgba(0, 132, 255, 0.904) */
+    min-width: 230px;
+    height: fit-content;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     margin: 0px;
     border-bottom-left-radius: 10px;
@@ -150,22 +152,21 @@ body {
     z-index: 1;
 }
 
-/* Style the links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: black;
+
+#soma {
+    height: fit-content;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 20px 0px 20px 0px;
+    color: wheat;
     text-decoration: none;
     display: block;
-    text-align: left;
-
+    text-align: center;
+    background-color: rgba(0, 132, 255, 0.904);
 }
 
-.dropdown_button:hover .dropdown-content {
-
-    display: block;
 
 
-}
 
 .tagline_Text {
     color: antiquewhite;
@@ -177,25 +178,30 @@ body {
 
 }
 
+.btn_close {
+    cursor: pointer;
+}
 
 .btn_inquire {
     width: 200px;
+    height: 60px;
     color: white;
     font-weight: 700;
     background-color: rgba(240, 41, 41, 0.767);
-    padding: 20px 40px 20px 40px;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     display: block;
     margin-top: 50px;
     margin-left: 15%;
+    border-style: none;
+    cursor: pointer;
 }
 
 .btn_inquire:hover {
 
 
-    box-shadow: 1px 14px 38px 1px rgba(0, 0, 0, 0.82);
+    box-shadow: 1px 14px 38px 1px rgba(0, 0, 0, 1);
 }
 
 .btn_inquire:active {

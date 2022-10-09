@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> </title>
+		<link rel="stylesheet" href="styles/southOfMarket.css" />
+		<link rel="stylesheet" href="styles/media_query/southOfMarket_query.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+
+	<body>
+		<div class="body_container">
+			<div class="top_bar" id="top_bar">
+				<img
+					class="index_logo"
+					src="/main_page/assets/Crescent.png"
+					width="90px"
+				/>
+				<h2 class="company_name_text">
+					CRESCENT CONDO AND OFFICE RENTALS INC.
+				</h2>
+
+				<ul class="ul_class" id="ul_class">
+					<li><a href="index.html" class="btn_home">HOME</a></li>
+					<li>
+						<a href="belagio1.html">
+							BELLAGIO 1
+							<!-- <i class="fa fa-caret-down"></i> -->
+						</a>
+						<!-- <div class="dropdown-content">
+							<a href="#">SoMa 1</a>
+							<a href="#">SoMa 2</a>
+						</div> -->
+					</li>
+					<li class="dropdown_button" id="dropdown_button" onclick="dropMenu()">
+						<a class="btn_SouthOfMarket active">
+							SOUTH OF MARKET
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-content" id="dropdown-content">
+							<a class="soma" id="soma" href="SouthOfMarket.html"
+								>Soma-One-BR</a
+							>
+							<a class="soma active" id="soma2" href="soma2.html"
+								>Soma-Two- BR
+							</a>
+						</div>
+					</li>
+					<li><a>TWO SERENDRA</a></li>
+					<li>
+						<a>OTHER PROPERTIES</a>
+					</li>
+				</ul>
+				<div id="container_id" class="container" onclick="menuIcon(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</div>
+			<!-- End of Navigation Bar -->
+			<div class="sub_topBar">
+				<div class="row row_subTopBar">
+					<div class="column topBar_Section">
+						<h3>Check our available studios:</h3>
+					</div>
+					<div class="column topBar_SectionTwo">
+						<a class="subBar_a" id="soma_1" onclick="subBarBtn(this.id)">
+							SOMA TWO-BR (1)</a
+						>
+						<a class="subBar_a" id="soma_2" onclick="subBarBtn(this.id)"
+							>SOMA TWO-BR (2)</a
+						>
+						<a class="subBar_a" id="soma_3" onclick="subBarBtn(this.id)"
+							>SOMA TWO-BR (3)</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<div class="row southOfMarket_intro">
+				<div class="column sOm_TxtIntro">
+					<h1>South of Market</h1>
+					<p>
+						South of Market Private Residences, SOMA, is a 40-story twin tower
+						development, located at 25th Street corner 11th Avenue, Bonifacio
+						Global City.<br /><br />
+						Enjoy using SoMa's facilities. It has an air conditioned gym, a lap
+						pool with adjoining kiddie pool, a billiard room, THX Theater room,
+						SPA area and a function room. In terms of security, there is 24 x 7
+						entrance security, doorman-lobby guard, closed circuit TV. The
+						building offers convenient access to getting public transportation
+						at 11th Avenue or at 26th Street. The building offers convenient
+						access to getting public transportation at the Market! Market! and
+						close enough to St. Lukes's Medical Facility, all within 15 minutes'
+						walk.
+					</p>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7723.8303918524125!2d121.05196400000001!3d14.546842000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb54626bde471e7f9!2sSouth%20of%20Market%20Private%20Residences!5e0!3m2!1sen!2sph!4v1663512821344!5m2!1sen!2sph"
+						width="100%"
+						height="320"
+						style="border: 0; margin-top: 20px"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+
+				<div class="column sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s1.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s2.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s3.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s4.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s05.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/s6.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="soma_one" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro1">
+					<h1>SOMA TWO-BR (1)</h1>
+					<p>
+						The TWO BEDROOM units offer convenience and efficiency.
+						<br /><br />
+						The units are around 75 sq. m. in floor area, fully furnished, with
+						air-condtioner, a kitchen with range, range hood, refrigerator,
+						microwave oven, and kitchen accessories. Linens and towels are
+						provided. <br />
+						<br />The units are fitted with a balcony with a washing machine
+						with spin dryer. Units come with cable TV and Wi-Fi Internet access.
+					</p>
+				</div>
+
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/2308s-Living Area.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/2308s-Dining Area.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/2308s-Kitchen.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/2308s-Master's Br.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/2308s-2nd Br1.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/2308s-Bathroom1.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="soma_two" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro2">
+					<h1>SOMA TWO-BR (2)</h1>
+					<p>
+						The TWO BEDROOM units offer convenience and efficiency.
+						<br /><br />
+						The units are around 75 sq. m. in floor area, fully furnished, with
+						air-condtioner, a kitchen with range, range hood, refrigerator,
+						microwave oven, and kitchen accessories. Linens and towels are
+						provided.<br />
+						<br />The units are fitted with a balcony with a washing machine
+						with spin dryer. Units come with cable TV and Wi-Fi Internet access.
+					</p>
+				</div>
+
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/2501s-Living Area1.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/2501s-Study Table.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/2501s-Kitchen.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/2501s-2nd Br.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/2501s-Bathroom.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/2501s-Laundry Area.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="soma_three" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro3">
+					<h1>SOMA TWO-BR (3)</h1>
+					<p>
+						The TWO BEDROOM units offer convenience and efficiency.
+						<br /><br />
+						The units are around 75 sq. m. in floor area, fully furnished, with
+						air-condtioner, a kitchen with range, range hood, refrigerator,
+						microwave oven, and kitchen accessories. Linens and towels are
+						provided.<br />
+						<br />The units are fitted with a balcony with a washing machine
+						with spin dryer. Units come with cable TV and Wi-Fi Internet access.
+					</p>
+				</div>
+
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/sala.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/dining.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/kitchen.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/bed1.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/bed2.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="/main_page/assets/bathroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Script -->
+
+		<script>
+			function subBarBtn(x) {
+				var v = x;
+				var sOm_TxtIntro1 = document.getElementById("sOm_TxtIntro1");
+				var sOm_TxtIntro2 = document.getElementById("sOm_TxtIntro2");
+				var sOm_TxtIntro3 = document.getElementById("sOm_TxtIntro3");
+				var sOm_TxtIntro4 = document.getElementById("sOm_TxtIntro4");
+				var sOm_TxtIntro5 = document.getElementById("sOm_TxtIntro5");
+				switch (v.trim()) {
+					case "soma_1":
+						sOm_TxtIntro1.scrollIntoView({ behavior: "smooth" });
+						break;
+					case "soma_2":
+						sOm_TxtIntro2.scrollIntoView({ behavior: "smooth" });
+						break;
+					case "soma_3":
+						sOm_TxtIntro3.scrollIntoView({ behavior: "smooth" });
+						break;
+					case "soma_4":
+						sOm_TxtIntro4.scrollIntoView({ behavior: "smooth" });
+						break;
+					case "soma_5":
+						sOm_TxtIntro5.scrollIntoView({ behavior: "smooth" });
+						break;
+					default:
+						text = "I have never heard of that fruit...";
+				}
+			}
+
+			function dropMenu() {
+				const dropdownContent = document.getElementById("dropdown-content");
+				dropdownContent.style.display == "none"
+					? (dropdownContent.style.display = "block")
+					: (dropdownContent.style.display = "none");
+			}
+			function myFunction() {
+				var displayss = document.getElementById("inquiry_questioniere");
+				if (displayss.style.display == "none") {
+					displayss.style.display = "block";
+				} else {
+					displayss.style.display = "none";
+				}
+			}
+
+			function menuIcon() {
+				const value = document.getElementById("container_id");
+				var displayss = document.getElementById("top_bar");
+				var ul_class = document.getElementById("ul_class");
+				value.classList.toggle("change");
+				if (value.className == "container change") {
+					displayss.style.height = "auto";
+					displayss.style.width = "100%";
+					ul_class.style.display = "block";
+				} else {
+					ul_class.style.display = "none";
+					displayss.style.height = "90px";
+				}
+			}
+
+			function mySAdwasd(x) {
+				const dropdownMenu = document.getElementById("dropdownButton");
+				var ul_class = document.getElementById("ul_class");
+				const dropdownContent = document.getElementById("dropdown-content");
+				if (x.matches) {
+					// If media query matches
+					const value = document.getElementById("container_id");
+
+					var displayss = document.getElementById("top_bar");
+
+					if (value.className == "container change") {
+						// alert("im here now");
+						ul_class.style.display = "block";
+						ul_class.style.display = "none";
+						displayss.style.height = "90px";
+						value.classList.toggle("change");
+					} else {
+						displayss.style.display = "90px";
+						ul_class.style.display = "none";
+						dropdownContent.style.display = "none";
+					}
+				} else {
+					dropdownContent.style.display = "none";
+					ul_class.style.display = "block";
+				}
+			}
+
+			var x = window.matchMedia("(max-width:1240px)");
+
+			mySAdwasd(x); // Call listener function at run time
+
+			x.addListener(mySAdwasd); // Attach listener function on state changes
+		</script>
+	</body>
+</html>
