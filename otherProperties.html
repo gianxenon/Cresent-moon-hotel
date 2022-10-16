@@ -26,17 +26,10 @@
 				<ul class="ul_class" id="ul_class">
 					<li><a href="index.html" class="btn_home">HOME</a></li>
 					<li>
-						<a href="belagio1.html">
-							BELLAGIO 1
-							<!-- <i class="fa fa-caret-down"></i> -->
-						</a>
-						<!-- <div class="dropdown-content">
-							<a href="#">SoMa 1</a>
-							<a href="#">SoMa 2</a>
-						</div> -->
+						<a href="belagio1.html"> BELLAGIO 1 </a>
 					</li>
 					<li class="dropdown_button" id="dropdown_button" onclick="dropMenu()">
-						<a class="btn_SouthOfMarket active">
+						<a class="btn_SouthOfMarket">
 							SOUTH OF MARKET
 							<i class="fa fa-caret-down"></i>
 						</a>
@@ -44,12 +37,14 @@
 							<a class="soma" id="soma" href="SouthOfMarket.html"
 								>Soma-One-BR</a
 							>
-							<a class="soma active" id="soma2" href="soma2.html"
-								>Soma-Two- BR
-							</a>
+							<a id="soma" href="soma2.html">Soma-Two- BR </a>
 						</div>
 					</li>
-					<li><a href="twoSerendra.html">TWO SERENDRA</a></li>
+					<li>
+						<a class="tw_seren active" href="TwoSerendra.html">
+							TWO SERENDRA
+						</a>
+					</li>
 					<li>
 						<a href="otherProperties.html">OTHER PROPERTIES</a>
 					</li>
@@ -67,52 +62,51 @@
 						<h3>Check our available studios:</h3>
 					</div>
 					<div class="column topBar_SectionTwo">
+						<a class="subBar_a" id="soma_4" onclick="subBarBtn(this.id)"
+							>SEQUOIA 2506</a
+						>
 						<a class="subBar_a" id="soma_1" onclick="subBarBtn(this.id)">
-							SOMA TWO-BR (1)</a
+							SEQUOIA 52<sup>nd</sup> FLOOR</a
 						>
 						<a class="subBar_a" id="soma_2" onclick="subBarBtn(this.id)"
-							>SOMA TWO-BR (2)</a
+							>SEQUOIA 29<sup>th</sup> FLOOR</a
 						>
 						<a class="subBar_a" id="soma_3" onclick="subBarBtn(this.id)"
-							>SOMA TWO-BR (3)</a
+							>SEQUOIA 911 FLOOR</a
 						>
 					</div>
 				</div>
 			</div>
 
 			<div class="row southOfMarket_intro">
-				<div class="column sOm_TxtIntro">
-					<h1>South of Market</h1>
-					<p>
-						South of Market Private Residences, SOMA, is a 40-story twin tower
-						development, located at 25th Street corner 11th Avenue, Bonifacio
-						Global City.<br /><br />
-						Enjoy using SoMa's facilities. It has an air conditioned gym, a lap
-						pool with adjoining kiddie pool, a billiard room, THX Theater room,
-						SPA area and a function room. In terms of security, there is 24 x 7
-						entrance security, doorman-lobby guard, closed circuit TV. The
-						building offers convenient access to getting public transportation
-						at 11th Avenue or at 26th Street. The building offers convenient
-						access to getting public transportation at the Market! Market! and
-						close enough to St. Lukes's Medical Facility, all within 15 minutes'
-						walk.
-					</p>
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7723.8303918524125!2d121.05196400000001!3d14.546842000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb54626bde471e7f9!2sSouth%20of%20Market%20Private%20Residences!5e0!3m2!1sen!2sph!4v1663512821344!5m2!1sen!2sph"
-						width="100%"
-						height="320"
-						style="border: 0; margin-top: 20px"
-						allowfullscreen=""
-						loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"
-					></iframe>
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro">
+					<h1>HIGH STREET SOUTH CORPORATE PLAZA</h1>
+
+					<h3
+						style="
+							margin-top: 20px;
+							max-width: 700px;
+							font-size: 20px;
+							font-weight: 400;
+						"
+					>
+						High Street South Corporate Plaza, is a 28-storey two building
+						development, located at 26th Street corner 11th Avenue, Bonifacio
+						Global City. An office condominium, it redefines commercial
+						investment opportunity. It is a rare investment opportunity in one
+						of the most prominent addresses ever offered in Metro Manila. The
+						first two floors shall be commercial units for lease by Ayala Malls,
+						then the four consecutive floors shall house the parking allotments.
+						The office units will start at the Podium with 22-levels of 95 to
+						389 SQM office space/s in a floor.
+					</h3>
 				</div>
 
 				<div class="column sOm_ImgBox">
 					<div class="row row_content" id="row_content">
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/s1.jpg"
+								src="./main_page/assets/high_towerview.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -121,7 +115,7 @@
 
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/s2.jpg"
+								src="./main_page/assets/high_lobby.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -130,7 +124,7 @@
 
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/s3.jpg"
+								src="./main_page/assets/pic6.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -139,7 +133,16 @@
 
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/s4.jpg"
+								src="./main_page/assets/pic7.jpg"
+								style="object-fit: fill"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<!-- <div class="column row_one">
+							<img
+								src="./main_page/assets/tw-BEDROOM.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -148,45 +151,86 @@
 
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/s05.jpg"
-								style="object-fit: cover"
+								src="./main_page/assets/tw-BATHROOM.jpg"
+								style="object-fit: cover, contain"
 								width="100%"
 								height="100%"
 							/>
-						</div>
-
-						<div class="column row_one">
-							<img
-								src="./main_page/assets/s6.jpg"
-								style="object-fit: cover"
-								width="100%"
-								height="100%"
-							/>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
 
 			<div id="soma_one" class="row soma_one">
 				<div class="column sOm_TxtIntro" id="sOm_TxtIntro1">
-					<h1>SOMA TWO-BR (1)</h1>
-					<p>
-						The TWO BEDROOM units offer convenience and efficiency.
-						<br /><br />
-						The units are around 75 sq. m. in floor area, fully furnished, with
-						air-condtioner, a kitchen with range, range hood, refrigerator,
-						microwave oven, and kitchen accessories. Linens and towels are
-						provided. <br />
-						<br />The units are fitted with a balcony with a washing machine
-						with spin dryer. Units come with cable TV and Wi-Fi Internet access.
-					</p>
+					<h1>COMMERCIAL SPACE FOR LEASE</h1>
+
+					<dl style="font-size: 26px; margin-top: 20px">
+						<dt style="font-size: 20px">Price:</dt>
+						<dd style="padding-left: 40px; font-size: 18px">
+							-
+							<span style="color: red; font-weight: 700">PHP 1,500.00</span>
+							per square meter + VAT + Dues
+						</dd>
+						<dt style="margin-top: 20px; font-size: 20px">Address</dt>
+						<dd style="margin-top: 20px; padding-left: 40px; font-size: 18px">
+							- Hight Street South Croporate Plaza, 26th corner 9th, Bonifacio
+							Global City, Taguig City
+						</dd>
+						<dt style="margin-top: 20px; font-size: 20px">Floor Area:</dt>
+						<dd style="margin-top: 20px; padding-left: 40px; font-size: 18px">
+							- 67 sq.m.
+						</dd>
+
+						<dt style="margin-top: 20px; font-size: 20px">Details:</dt>
+						<dd>
+							<ul style="padding-left: 40px; margin-top: 20px; font-size: 18px">
+								<li>Corner unit</li>
+								<li>bare type</li>
+								<li>high floor Facing Laguna De Bay</li>
+							</ul>
+						</dd>
+						<dt style="margin-top: 20px; font-size: 20px">
+							BUILDING SPECIFICATIONS:
+						</dt>
+						<dd>
+							<ul style="padding-left: 40px; margin-top: 20px; font-size: 18px">
+								<li>- Turnover Condition</li>
+								<li>
+									- bare and plain cement finish for flooring, ready to receive
+									finish at 1-inch depth, Bare and Plain Cement Finish for
+									Ceiling, No unit partitions.
+								</li>
+								<li>
+									- Telecoms and Broadbands - Globe and PLDT, fiber optic
+									backbones.
+								</li>
+								<li>
+									- Elevators - 6 high zone elevators and 6 low zones elevators,
+									3 parking elevators (25-28 seconds waiting time), 1 service
+									elevator serving all floors.
+								</li>
+								<li>
+									- Climate Control - Centralized chilled water system to all
+									units and hallways, with modular variable speed design.
+								</li>
+								<li>
+									- Building Management System - Control and monitoring of
+									lightning, air conditioning and water supply in common areas
+									Monitoring of power air conditioning and water supply in
+									office units.
+								</li>
+								<li>- Security System - CCTV Camera and RFID Access Card.</li>
+							</ul>
+						</dd>
+					</dl>
 				</div>
 
 				<div class="column sOm_ImgBox" id="sOm_ImgBox">
 					<div class="row row_content" id="row_content">
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/2308s-Living Area.JPG"
+								src="./main_page/assets/other_img4.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -194,7 +238,7 @@
 						</div>
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/2308s-Dining Area.JPG"
+								src="./main_page/assets/other_img5.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -203,7 +247,7 @@
 
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/2308s-Kitchen.JPG"
+								src="./main_page/assets/other_img2.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -211,7 +255,7 @@
 						</div>
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/2308s-Master's Br.JPG"
+								src="./main_page/assets/other_img3.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -219,7 +263,7 @@
 						</div>
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/2308s-2nd Br1.JPG"
+								src="./main_page/assets/other_img1.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -227,8 +271,8 @@
 						</div>
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/2308s-Bathroom1.JPG"
-								style="object-fit: cover"
+								src="./main_page/assets/other_img6.jpg"
+								style="object-fit: fill"
 								width="100%"
 								height="100%"
 							/>
@@ -239,24 +283,35 @@
 
 			<div id="soma_two" class="row soma_one">
 				<div class="column sOm_TxtIntro" id="sOm_TxtIntro2">
-					<h1>SOMA TWO-BR (2)</h1>
-					<p>
-						The TWO BEDROOM units offer convenience and efficiency.
-						<br /><br />
-						The units are around 75 sq. m. in floor area, fully furnished, with
-						air-condtioner, a kitchen with range, range hood, refrigerator,
-						microwave oven, and kitchen accessories. Linens and towels are
-						provided.<br />
-						<br />The units are fitted with a balcony with a washing machine
-						with spin dryer. Units come with cable TV and Wi-Fi Internet access.
-					</p>
+					<h1>WEST GALLERY</h1>
+
+					<dl style="font-size: 26px; margin-top: 20px">
+						<dt>Selling price:</dt>
+						<dd style="padding-left: 40px">
+							-
+							<span style="color: red; font-weight: 700">PHP 55,000,000</span>
+						</dd>
+						<dt>Floor Area:</dt>
+						<dd style="padding-left: 40px">- 130 sq.m.</dd>
+
+						<dt style="margin-top: 20px">Additional details:</dt>
+						<dd>
+							<ul style="padding-left: 40px; margin-top: 20px">
+								<li>No. : of Bedroom:2</li>
+								<li>One Parking</li>
+								<li>One Storage Room</li>
+								<li>Mid-zone pop out unit</li>
+								<li>High Floor</li>
+							</ul>
+						</dd>
+					</dl>
 				</div>
 
 				<div class="column sOm_ImgBox" id="sOm_ImgBox">
 					<div class="row row_content" id="row_content">
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/2501s-Living Area1.JPG"
+								src="./main_page/assets/wg_Building.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -264,7 +319,7 @@
 						</div>
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/2501s-Study Table.JPG"
+								src="./main_page/assets/wg_Lobby.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -273,7 +328,15 @@
 
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/2501s-Kitchen.JPG"
+								src="./main_page/assets/wg_Floorplan.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<!-- <div class="column row_one">
+							<img
+								src="./main_page/assets/S29_corner.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -281,7 +344,7 @@
 						</div>
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/2501s-2nd Br.JPG"
+								src="./main_page/assets/S29_bedroom.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -289,44 +352,55 @@
 						</div>
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/2501s-Bathroom.JPG"
+								src="./main_page/assets/S29_bathroom.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
 							/>
-						</div>
-						<div class="column row_one">
-							<img
-								src="./main_page/assets/2501s-Laundry Area.JPG"
-								style="object-fit: cover"
-								width="100%"
-								height="100%"
-							/>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
 
-			<div id="soma_three" class="row soma_one">
+			<!-- <div id="soma_three" class="row soma_one">
 				<div class="column sOm_TxtIntro" id="sOm_TxtIntro3">
-					<h1>SOMA TWO-BR (3)</h1>
-					<p>
-						The TWO BEDROOM units offer convenience and efficiency.
-						<br /><br />
-						The units are around 75 sq. m. in floor area, fully furnished, with
-						air-condtioner, a kitchen with range, range hood, refrigerator,
-						microwave oven, and kitchen accessories. Linens and towels are
-						provided.<br />
-						<br />The units are fitted with a balcony with a washing machine
-						with spin dryer. Units come with cable TV and Wi-Fi Internet access.
-					</p>
+					<h1>SEQUOIA 911 FLOOR</h1>
+
+					<dl style="font-size: 26px; margin-top: 20px">
+						<dt>Rental Rate:</dt>
+						<dd style="padding-left: 40px">
+							- <span style="color: red; font-weight: 700">PHP 150,000</span>
+						</dd>
+						<dt>Address</dt>
+						<dd style="padding-left: 40px">
+							- Sequoia Serendra II Mckinley Parkway, Bonifacio Global City,
+							Taguig City
+						</dd>
+						<dt>Floor Area:</dt>
+						<dd style="padding-left: 40px">- 125 sq.m.</dd>
+
+						<dt style="margin-top: 20px">Additional details:</dt>
+						<dd>
+							<ul style="padding-left: 40px; margin-top: 20px">
+								<li>No. : of Bedroom:3</li>
+								<li>No. : of Bathroom: 3</li>
+								<li>Fully furnished</li>
+								<li>Rent inclusive of condo dues</li>
+								<li>Minimum of 1 year lease</li>
+								<li>With maid's room</li>
+								<li>Infinity view</li>
+								<li>Airconditioned living room and bedrooms</li>
+								<li>Inclusive of 2 Parking</li>
+							</ul>
+						</dd>
+					</dl>
 				</div>
 
 				<div class="column sOm_ImgBox" id="sOm_ImgBox">
 					<div class="row row_content" id="row_content">
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/sala.jpg"
+								src="./main_page/assets/s1br3_living_room2.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -334,7 +408,7 @@
 						</div>
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/dining.jpg"
+								src="./main_page/assets/911_TABLEDINING.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -343,7 +417,7 @@
 
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/kitchen.jpg"
+								src="./main_page/assets/911-KITCHEN.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -351,7 +425,7 @@
 						</div>
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/bed1.jpg"
+								src="./main_page/assets/911-BEDROOM.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -359,7 +433,7 @@
 						</div>
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/bed2.jpg"
+								src="./main_page/assets/911-Sofaset.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -367,7 +441,7 @@
 						</div>
 						<div class="column row_one">
 							<img
-								src="./main_page/assets/bathroom.jpg"
+								src="./main_page/assets/911-COMFORTROOM.jpg"
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
@@ -375,7 +449,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 		<!-- Script -->
@@ -386,7 +460,7 @@
 				var sOm_TxtIntro1 = document.getElementById("sOm_TxtIntro1");
 				var sOm_TxtIntro2 = document.getElementById("sOm_TxtIntro2");
 				var sOm_TxtIntro3 = document.getElementById("sOm_TxtIntro3");
-				var sOm_TxtIntro4 = document.getElementById("sOm_TxtIntro4");
+				var sOm_TxtIntro4 = document.getElementById("sOm_TxtIntro");
 				var sOm_TxtIntro5 = document.getElementById("sOm_TxtIntro5");
 				switch (v.trim()) {
 					case "soma_1":

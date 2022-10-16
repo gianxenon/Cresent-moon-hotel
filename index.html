@@ -39,9 +39,9 @@
 							<a id="soma" href="#">Soma-Two- BR </a>
 						</div>
 					</li>
-					<li><a>TWO SERENDRA</a></li>
+					<li><a href="twoSerendra.html">TWO SERENDRA</a></li>
 					<li>
-						<a>OTHER PROPERTIES</a>
+						<a href="otherProperties.html">OTHER PROPERTIES</a>
 					</li>
 				</ul>
 				<div id="container_id" class="container" onclick="menuIcon(this)">
@@ -54,58 +54,65 @@
 				The Life Style <br />
 				You Deserve
 			</h1>
-			<button onclick="myFunction(this)" class="btn_inquire" id="btn_inquire">
-				Inquire now
-			</button>
+			<!-- onclick="myFunction(this)" -->
+			<button id="myBtn" class="btn_inquire">Inquire now</button>
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<span class="close">&times;</span>
 
+					<div class="form_container">
+						<form
+							action="https://docs.google.com/forms/d/e/1FAIpQLSfW3juzaRBGf3ufZnrwczPg22CVqFyihPjmBgGRuMegvklLsg/formResponse"
+						>
+							<label for="fname">FullName</label>
+							<input
+								type="text"
+								id="fname"
+								name="entry.2029225404"
+								placeholder="FullName.."
+							/>
+
+							<label for="lname">Your Email</label>
+							<input
+								type="text"
+								id="lname"
+								name="entry.1665093986"
+								placeholder="Your Email.."
+							/>
+
+							<label for="fname">Your location</label>
+							<input
+								type="text"
+								id="fname"
+								name="entry.1268335937"
+								placeholder="Your location.."
+							/>
+
+							<label for="lname">Your mobile number</label>
+							<input
+								type="tel"
+								id="lname"
+								name="entry.1978180290"
+								placeholder="Your mobile number.."
+								pattern="[0-9]{11}"
+							/>
+							<label for="subject">Inquiry details</label>
+							<textarea
+								id="subject"
+								name="entry.227794648"
+								placeholder="Write something.."
+								style="height: 170px"
+							></textarea>
+							<button type="submit" value="Submit">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
 			<div class="inquiry_questioniere" id="inquiry_questioniere">
 				<div class="btnClose_container">
 					<a class="btn_close" onclick="myFunction(this)">X</a>
-				</div>
-
-				<div class="form_container">
-					<form action="#">
-						<label for="fname">FullName</label>
-						<input
-							type="text"
-							id="fname"
-							name="firstname"
-							placeholder="FullName.."
-						/>
-
-						<label for="lname">Your Email</label>
-						<input
-							type="text"
-							id="lname"
-							name="lastname"
-							placeholder="Your Email.."
-						/>
-
-						<label for="fname">Your location</label>
-						<input
-							type="text"
-							id="fname"
-							name="firstname"
-							placeholder="Your location.."
-						/>
-
-						<label for="lname">Your mobile number</label>
-						<input
-							type="tel"
-							id="lname"
-							name="lastname"
-							placeholder="Your mobile number.."
-							pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
-						/>
-						<label for="subject">Inquiry details</label>
-						<textarea
-							id="subject"
-							name="subject"
-							placeholder="Write something.."
-							style="height: 170px"
-						></textarea>
-						<input type="submit" value="Submit" onclick="functionAlert()" />
-					</form>
 				</div>
 			</div>
 
@@ -121,6 +128,33 @@
 		<!-- JavaScript -->
 
 		<script>
+			var modal = document.getElementById("myModal");
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal
+			btn.onclick = function () {
+				modal.style.display = "block";
+			};
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function () {
+				modal.style.display = "none";
+			};
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function (event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			};
+
+			// end of modal
+
 			function dropMenu() {
 				const dropdownContent = document.getElementById("dropdown-content");
 				dropdownContent.style.display == "none"
