@@ -215,6 +215,11 @@ body {
     color: #000;
 }
 
+.op_active.active {
+    background-color: antiquewhite;
+    color: #000;
+}
+
 .sub_topBar {
     padding-left: 150px;
     height: 90px;
