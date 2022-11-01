@@ -341,6 +341,18 @@ input[type=submit] {
     width: fit-content;
 }
 
+.btn_submit {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 400;
+
+}
+
 /* The Close Button */
 .close {
     color: #aaaaaa;

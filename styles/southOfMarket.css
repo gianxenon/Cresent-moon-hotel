@@ -22,11 +22,39 @@ body {
 
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url("../main_page/assets/index_bg4.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url("../main_page/assets/Soma\ 1\ Background.JPG");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    object-fit: cover;
+
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.body_containers {
+
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url("../main_page/assets/SoMaTwoBackground.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.body_containerss {
+
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url("../main_page/assets/OtherPropertiesBG.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
