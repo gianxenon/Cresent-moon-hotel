@@ -13,6 +13,16 @@
 		<title>Crescent Condo Office Rentals</title>
 	</head>
 	<body>
+		<script type="text/javascript">
+			var submitted = false;
+		</script>
+		<iframe
+			name="hiddenConfirm"
+			i="hiddenConfirm"
+			style="display: none"
+			onload="if(submitted){window.location='inquiryLandingPage.html';}"
+		></iframe>
+
 		<div class="body-container">
 			<div class="top_bar" id="top_bar">
 				<img
@@ -65,6 +75,9 @@
 					<div class="form_container">
 						<form
 							action="https://docs.google.com/forms/d/e/1FAIpQLSfW3juzaRBGf3ufZnrwczPg22CVqFyihPjmBgGRuMegvklLsg/formResponse"
+							method="post"
+							target="hiddenConfirm"
+							onsubmit="submitted=true"
 						>
 							<label for="fname">FullName</label>
 							<input
