@@ -23,6 +23,7 @@
 				cursor: pointer;
 				padding: 15px;
 				border-radius: 4px;
+				display: none;
 			}
 
 			#myBtn:hover {
@@ -566,7 +567,9 @@
 				</div>
 			</div>
 
-			<button onclick="topFunctions()" id="myBtn" title="Go to top">Top</button>
+			<button onclick="subBarBtn(this.id)" id="myBtn" title="Go to top">
+				Top
+			</button>
 		</div>
 
 		<!-- Script -->
@@ -584,6 +587,7 @@
 				var sOm_TxtIntro3 = document.getElementById("sOm_TxtIntro2");
 				var sOm_TxtIntro4 = document.getElementById("sOm_TxtIntro3");
 				var sOm_TxtIntro5 = document.getElementById("sOm_TxtIntro4");
+				var top_bar = document.getElementById("top_bar");
 				switch (v.trim()) {
 					case "soma_1":
 						sOm_TxtIntro1.scrollIntoView({ behavior: "smooth" });
@@ -599,6 +603,9 @@
 						break;
 					case "soma_4":
 						sOm_TxtIntro5.scrollIntoView({ behavior: "smooth" });
+						break;
+					case "myBtn":
+						top_bar.scrollIntoView({ behavior: "smooth" });
 						break;
 					default:
 						text = "I have never heard of that fruit...";
