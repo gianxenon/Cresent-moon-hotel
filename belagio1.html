@@ -4,6 +4,7 @@
 	<head>
 		<title>Bellagio 1</title>
 		<link rel="stylesheet" href="styles/belagio1.css" />
+		<link rel="stylesheet" href="styles/img_view.css" />
 		<link rel="stylesheet" href="styles/media_query/belagio1_query.css" />
 		<link
 			rel="stylesheet"
@@ -102,6 +103,8 @@
 										style="object-fit: cover"
 										width="100%"
 										height="100%"
+										onclick="openModal();currentSlide(1)"
+										class="hover-shadow cursor"
 									/>
 								</div>
 								<div class="column row_one">
@@ -110,6 +113,8 @@
 										style="object-fit: cover"
 										width="100%"
 										height="100%"
+										onclick="openModal();currentSlide(1)"
+										class="hover-shadow cursor"
 									/>
 								</div>
 
@@ -119,6 +124,8 @@
 										style="object-fit: cover"
 										width="100%"
 										height="100%"
+										onclick="openModal();currentSlide(1)"
+										class="hover-shadow cursor"
 									/>
 								</div>
 								<div class="column row_one">
@@ -127,6 +134,8 @@
 										style="object-fit: cover"
 										width="100%"
 										height="100%"
+										onclick="openModal();currentSlide(1)"
+										class="hover-shadow cursor"
 									/>
 								</div>
 								<div class="column row_one">
@@ -135,6 +144,8 @@
 										style="object-fit: cover"
 										width="100%"
 										height="100%"
+										onclick="openModal();currentSlide(1)"
+										class="hover-shadow cursor"
 									/>
 								</div>
 								<div class="column row_one">
@@ -143,16 +154,115 @@
 										style="object-fit: cover"
 										width="100%"
 										height="100%"
+										onclick="openModal();currentSlide(1)"
+										class="hover-shadow cursor"
 									/>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+						<div class="mySlides">
+							<div class="numbertext">1 / 6</div>
+							<img
+								src="./main_page/assets/19D - Living Room.jpg"
+								style="width: 100%; height: 700px; object-fit: contain"
+							/>
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 6</div>
+							<img
+								src="./main_page/assets/19D - Dining Area.jpg"
+								style="width: 100%; height: 700px; object-fit: contain"
+							/>
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 6</div>
+							<img
+								src="./main_page/assets/19D - Kitchen.jpg"
+								style="width: 100%; height: 700px; object-fit: contain"
+							/>
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">4 / 6</div>
+							<img
+								src="./main_page/assets/19D - Bedroom.jpg"
+								style="width: 100%; height: 700px; object-fit: contain"
+							/>
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">5 / 6</div>
+							<img
+								src="./main_page/assets/20180411_155859.jpg"
+								style="width: 100%; height: 700px; object-fit: contain"
+							/>
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">6 / 6</div>
+							<img
+								src="./main_page/assets/19D - Bathroom.jpg"
+								style="width: 100%; height: 700px; object-fit: contain"
+							/>
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+				</div>
+				<!-- end of content -->
 			</div>
 		</div>
 
 		<script>
+			function openModal() {
+				document.getElementById("myModal").style.display = "block";
+			}
+
+			function closeModal() {
+				document.getElementById("myModal").style.display = "none";
+			}
+
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+				showSlides((slideIndex += n));
+			}
+
+			function currentSlide(n) {
+				showSlides((slideIndex = n));
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("demo");
+				var captionText = document.getElementById("caption");
+				if (n > slides.length) {
+					slideIndex = 1;
+				}
+				if (n < 1) {
+					slideIndex = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " active";
+				captionText.innerHTML = dots[slideIndex - 1].alt;
+			}
+
 			function dropMenu() {
 				const dropdownContent = document.getElementById("dropdown-content");
 				dropdownContent.style.display == "none"
