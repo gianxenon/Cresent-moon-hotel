@@ -16,14 +16,15 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.829);
+
 }
 
 /* Modal Content */
 .modal-content {
-    position: relative;
-
-    margin: auto;
-    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 90%;
     max-width: 1200px;
 }
@@ -46,6 +47,30 @@
 }
 
 .mySlides {
+    display: none;
+}
+
+.mySlides1 {
+    display: none;
+}
+
+.mySlides2 {
+    display: none;
+}
+
+.mySlides3 {
+    display: none;
+}
+
+.mySlides4 {
+    display: none;
+}
+
+.mySlides5 {
+    display: none;
+}
+
+.mySlides6 {
     display: none;
 }
 
