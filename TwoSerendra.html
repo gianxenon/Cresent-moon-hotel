@@ -11,10 +11,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=0.5" />
 		<link rel="stylesheet" href="styles/tw.css" />
 		<link rel="stylesheet" href="styles/media_query/tw_query.css" />
+		<link rel="stylesheet" href="styles/img_view.css" />
+		<style>
+			#myBtn {
+				position: fixed;
+				bottom: 20px;
+				right: 30px;
+				z-index: 99;
+				font-size: 18px;
+				border: none;
+				outline: none;
+				color: white;
+				cursor: pointer;
+				padding: 15px;
+				border-radius: 4px;
+				display: none;
+				background-color: rgb(18, 63, 129);
+			}
+
+			#myBtn:hover {
+				background-color: black;
+			}
+		</style>
 	</head>
 
 	<body>
-		<div class="body_container">
+		<div class="body_container" id="body_container" onscroll="scrollFnctiom()">
 			<div class="top_bar" id="top_bar">
 				<img
 					class="index_logo"
@@ -119,6 +141,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal');currentSlide(1);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 
@@ -128,6 +152,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal');currentSlide(2);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 
@@ -137,6 +163,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal');currentSlide(3);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 
@@ -146,6 +174,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal');currentSlide(4);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 
@@ -155,6 +185,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal');currentSlide(5);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 
@@ -211,6 +243,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal2');currentSlide2(1);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 
@@ -220,6 +254,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal2');currentSlide2(2);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 
@@ -229,6 +265,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal2');currentSlide2(3);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 
@@ -238,6 +276,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal2');currentSlide2(4);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 
@@ -247,6 +287,8 @@
 								style="object-fit: fill"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal2');currentSlide2(5);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 
@@ -256,6 +298,8 @@
 								style="object-fit: fill"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal2');currentSlide2(6);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 					</div>
@@ -304,6 +348,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal3');currentSlide3(1);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 						<div class="column row_one">
@@ -312,6 +358,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal3');currentSlide3(2);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 
@@ -321,6 +369,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal3');currentSlide3(3);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 						<div class="column row_one">
@@ -329,6 +379,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal3');currentSlide3(4);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 						<div class="column row_one">
@@ -337,6 +389,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal3');currentSlide3(5);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 						<div class="column row_one">
@@ -345,6 +399,8 @@
 								style="object-fit: fill"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal3');currentSlide3(6);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 					</div>
@@ -393,6 +449,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal4');currentSlide4(1);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 						<div class="column row_one">
@@ -401,6 +459,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal4');currentSlide4(2);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 
@@ -410,6 +470,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal4');currentSlide4(3);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 						<div class="column row_one">
@@ -418,6 +480,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal4');currentSlide4(4);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 						<div class="column row_one">
@@ -426,6 +490,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal4');currentSlide4(5);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 						<div class="column row_one">
@@ -434,6 +500,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal4');currentSlide4(6);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 					</div>
@@ -477,6 +545,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal5');currentSlide5(1);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 						<div class="column row_one">
@@ -485,6 +555,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal5');currentSlide5(2);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 
@@ -494,6 +566,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal5');currentSlide5(3);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 						<div class="column row_one">
@@ -502,6 +576,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal5');currentSlide5(4);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 						<div class="column row_one">
@@ -510,6 +586,8 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal5');currentSlide5(5);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 						<div class="column row_one">
@@ -518,16 +596,458 @@
 								style="object-fit: cover"
 								width="100%"
 								height="100%"
+								onclick="openModal('myModal5');currentSlide5(6);"
+								class="hover-shadow cursor"
 							/>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides">
+						<img
+							src="./main_page/assets/b7ra1k1a.bmp"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<img
+							src="./main_page/assets/rkrjzvu9.bmp"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<img
+							src="./main_page/assets/rg6qmpg4.bmp"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<img
+							src="./main_page/assets/sm1ei9r3.bmp"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<img
+							src="./main_page/assets/sugyqubh.bmp"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+			</div>
+
+			<div id="myModal2" class="modal">
+				<span class="close cursor" onclick="closeModal2()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/tw-SALA.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/tw-salaset.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/tw-DINING.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/tw-KITCHEN.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/tw-BEDROOM.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/Bedroom 2.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+				</div>
+			</div>
+
+			<div id="myModal3" class="modal">
+				<span class="close cursor" onclick="closeModal3()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides3">
+						<img
+							src="./main_page/assets/s52_balcony.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides3">
+						<img
+							src="./main_page/assets/s52_dining.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides3">
+						<img
+							src="./main_page/assets/s52_kitchen.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides3">
+						<img
+							src="./main_page/assets/1802S_Bed.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides3">
+						<img
+							src="./main_page/assets/s52_bedroom.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+					<div class="mySlides3">
+						<img
+							src="./main_page/assets/s52_bathroom.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides3(1)">&#10095;</a>
+				</div>
+			</div>
+
+			<div id="myModal4" class="modal">
+				<span class="close cursor" onclick="closeModal4()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/S29_living.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/S29_dining.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/S29_kitchen.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/S29_corner.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/S29_bedroom.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/S29_bathroom.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides4(1)">&#10095;</a>
+				</div>
+			</div>
+
+			<div id="myModal5" class="modal">
+				<span class="close cursor" onclick="closeModal5()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides5">
+						<img
+							src="./main_page/assets/tw_salaset2.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides5">
+						<img
+							src="./main_page/assets/911_TABLEDINING.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides5">
+						<img
+							src="./main_page/assets/911-KITCHEN.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides5">
+						<img
+							src="./main_page/assets/911-BEDROOM.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides5">
+						<img
+							src="./main_page/assets/911-Sofaset.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+					<div class="mySlides5">
+						<img
+							src="./main_page/assets/911-COMFORTROOM.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides5(1)">&#10095;</a>
+				</div>
+			</div>
+			<button onclick="subBarBtn(this.id)" id="myBtn" title="Go to top">
+				Top
+			</button>
 		</div>
 
 		<!-- Script -->
 
 		<script>
+			function scrollFnctiom() {
+				const bodyscrll = document.getElementById("body_container");
+				let bscrll = bodyscrll.scrollTop;
+
+				if (bscrll < 10) {
+					document.getElementById("myBtn").style.display = "block";
+				}
+
+				if (bscrll == 0) {
+					document.getElementById("myBtn").style.display = "none";
+				}
+			}
+
+			function openModal(x) {
+				var v = x;
+				switch (v) {
+					case "myModal":
+						document.getElementById("myModal").style.display = "block";
+						break;
+					case "myModal2":
+						document.getElementById("myModal2").style.display = "block";
+						break;
+					case "myModal3":
+						document.getElementById("myModal3").style.display = "block";
+						break;
+					case "myModal4":
+						document.getElementById("myModal4").style.display = "block";
+						break;
+					case "myModal5":
+						document.getElementById("myModal5").style.display = "block";
+						break;
+					case "myModal6":
+						document.getElementById("myModal6").style.display = "block";
+						break;
+					default:
+						location.href = "SouthOfMarket.html";
+						break;
+				}
+			}
+			// modal 1
+			function closeModal() {
+				document.getElementById("myModal").style.display = "none";
+			}
+
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+				showSlides((slideIndex += n));
+			}
+
+			function currentSlide(n) {
+				showSlides((slideIndex = n));
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+
+				if (n > slides.length) {
+					slideIndex = 1;
+				}
+				if (n < 1) {
+					slideIndex = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+
+				slides[slideIndex - 1].style.display = "block";
+			}
+			//2
+
+			function closeModal2() {
+				document.getElementById("myModal2").style.display = "none";
+			}
+			var slideIndexs = 1;
+			showSlides2(slideIndexs);
+
+			function currentSlide2(n) {
+				showSlides2((slideIndexs = n));
+			}
+			function plusSlides2(n) {
+				showSlides2((slideIndexs += n));
+			}
+
+			function showSlides2(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides2");
+
+				if (n > slides.length) {
+					slideIndexs = 1;
+				}
+				if (n < 1) {
+					slideIndexs = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+
+				slides[slideIndexs - 1].style.display = "block";
+			}
+
+			//3
+
+			function closeModal3() {
+				document.getElementById("myModal3").style.display = "none";
+			}
+			var slideIndexs3 = 1;
+			showSlides3(slideIndexs3);
+
+			function currentSlide3(n) {
+				showSlides3((slideIndexs3 = n));
+			}
+			function plusSlides3(n) {
+				showSlides3((slideIndexs3 += n));
+			}
+
+			function showSlides3(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides3");
+
+				if (n > slides.length) {
+					slideIndexs3 = 1;
+				}
+				if (n < 1) {
+					slideIndexs3 = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+
+				slides[slideIndexs3 - 1].style.display = "block";
+			}
+
+			//4
+			function closeModal4() {
+				document.getElementById("myModal4").style.display = "none";
+			}
+			var slideIndexs4 = 1;
+			showSlides4(slideIndexs4);
+
+			function currentSlide4(n) {
+				showSlides4((slideIndexs4 = n));
+			}
+			function plusSlides4(n) {
+				showSlides4((slideIndexs4 += n));
+			}
+
+			function showSlides4(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides4");
+
+				if (n > slides.length) {
+					slideIndexs4 = 1;
+				}
+				if (n < 1) {
+					slideIndexs4 = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+
+				slides[slideIndexs4 - 1].style.display = "block";
+			}
+
+			//5
+			function closeModal5() {
+				document.getElementById("myModal5").style.display = "none";
+			}
+			var slideIndexs5 = 1;
+			showSlides5(slideIndexs5);
+
+			function currentSlide5(n) {
+				showSlides5((slideIndexs5 = n));
+			}
+			function plusSlides5(n) {
+				showSlides5((slideIndexs5 += n));
+			}
+
+			function showSlides5(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides5");
+
+				if (n > slides.length) {
+					slideIndexs5 = 1;
+				}
+				if (n < 1) {
+					slideIndexs5 = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+
+				slides[slideIndexs5 - 1].style.display = "block";
+			}
+
+			//end of modal
 			function subBarBtn(x) {
 				var v = x;
 				var sOm_TxtIntro1 = document.getElementById("sOm_TxtIntro1");
@@ -539,25 +1059,35 @@
 					case "soma_1":
 						sOm_TxtIntro1.scrollIntoView({ behavior: "smooth" });
 						location.href = "twoSerendra.html#sOm_TxtIntro1";
+						document.getElementById("myBtn").style.display = "block";
 						break;
 					case "soma_2":
 						sOm_TxtIntro2.scrollIntoView({ behavior: "smooth" });
 						location.href = "twoSerendra.html#sOm_TxtIntro2";
+						document.getElementById("myBtn").style.display = "block";
 						break;
 					case "soma_3":
 						sOm_TxtIntro3.scrollIntoView({ behavior: "smooth" });
 						location.href = "twoSerendra.html#sOm_TxtIntro3";
+						document.getElementById("myBtn").style.display = "block";
 						break;
 					case "soma_4":
 						sOm_TxtIntro4.scrollIntoView({ behavior: "smooth" });
 						location.href = "twoSerendra.html#sOm_TxtIntro4";
+						document.getElementById("myBtn").style.display = "block";
 						break;
 					case "soma_5":
 						sOm_TxtIntro5.scrollIntoView({ behavior: "smooth" });
 						location.href = "twoSerendra.html#sOm_TxtIntro5";
+						document.getElementById("myBtn").style.display = "block";
+						break;
+					case "myBtn":
+						top_bar.scrollIntoView({ behavior: "smooth" });
+						document.getElementById("myBtn").style.display = "none";
 						break;
 					default:
 						location.href = "twoSerendra.html";
+						break;
 				}
 			}
 

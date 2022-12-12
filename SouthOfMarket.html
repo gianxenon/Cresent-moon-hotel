@@ -10,11 +10,32 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
+		<style>
+			#myBtn {
+				position: fixed;
+				bottom: 20px;
+				right: 30px;
+				z-index: 99;
+				font-size: 18px;
+				border: none;
+				outline: none;
+				color: white;
+				cursor: pointer;
+				padding: 15px;
+				border-radius: 4px;
+				display: none;
+				background-color: rgb(18, 63, 129);
+			}
+
+			#myBtn:hover {
+				background-color: black;
+			}
+		</style>
 		<meta name="viewport" content="width=device-width, initial-scale=0.5" />
 	</head>
 
 	<body>
-		<div class="body_container">
+		<div class="body_container" id="body_container" onscroll="scrollFnctiom()">
 			<div class="top_bar" id="top_bar">
 				<img
 					class="index_logo"
@@ -599,7 +620,6 @@
 				<span class="close cursor" onclick="closeModal()">&times;</span>
 				<div class="modal-content">
 					<div class="mySlides">
-						<div class="numbertext">1 / 6</div>
 						<img
 							src="./main_page/assets/s1.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -607,7 +627,6 @@
 					</div>
 
 					<div class="mySlides">
-						<div class="numbertext">2 / 6</div>
 						<img
 							src="./main_page/assets/s2.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -615,7 +634,6 @@
 					</div>
 
 					<div class="mySlides">
-						<div class="numbertext">3 / 6</div>
 						<img
 							src="./main_page/assets/newGym.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -623,7 +641,6 @@
 					</div>
 
 					<div class="mySlides">
-						<div class="numbertext">4 / 6</div>
 						<img
 							src="./main_page/assets/s4.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -631,14 +648,12 @@
 					</div>
 
 					<div class="mySlides">
-						<div class="numbertext">5 / 6</div>
 						<img
 							src="./main_page/assets/newPool.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
 						/>
 					</div>
 					<div class="mySlides">
-						<div class="numbertext">6 / 6</div>
 						<img
 							src="./main_page/assets/s6.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -654,7 +669,6 @@
 				<span class="close cursor" onclick="closeModal2()">&times;</span>
 				<div class="modal-content">
 					<div class="mySlides2">
-						<div class="numbertext">1 / 6</div>
 						<img
 							src="./main_page/assets/s1br_livingroom.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -662,7 +676,6 @@
 					</div>
 
 					<div class="mySlides2">
-						<div class="numbertext">2 / 6</div>
 						<img
 							src="./main_page/assets/s1br_livingroom2.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -670,7 +683,6 @@
 					</div>
 
 					<div class="mySlides2">
-						<div class="numbertext">3 / 6</div>
 						<img
 							src="./main_page/assets/s1br_diningroom.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -678,7 +690,6 @@
 					</div>
 
 					<div class="mySlides2">
-						<div class="numbertext">4 / 6</div>
 						<img
 							src="./main_page/assets/s1br_bedroom.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -686,14 +697,12 @@
 					</div>
 
 					<div class="mySlides2">
-						<div class="numbertext">5 / 6</div>
 						<img
 							src="./main_page/assets/s1br_kitchenroom.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
 						/>
 					</div>
 					<div class="mySlides2">
-						<div class="numbertext">6 / 6</div>
 						<img
 							src="./main_page/assets/s1br_bathroom.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -709,7 +718,6 @@
 				<span class="close cursor" onclick="closeModal3()">&times;</span>
 				<div class="modal-content">
 					<div class="mySlides3">
-						<div class="numbertext">1 / 6</div>
 						<img
 							src="./main_page/assets/1802S_Living.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -717,7 +725,6 @@
 					</div>
 
 					<div class="mySlides3">
-						<div class="numbertext">2 / 6</div>
 						<img
 							src="./main_page/assets/1802S_Living1.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -725,7 +732,6 @@
 					</div>
 
 					<div class="mySlides3">
-						<div class="numbertext">3 / 6</div>
 						<img
 							src="./main_page/assets/1802S_Dining.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -733,7 +739,6 @@
 					</div>
 
 					<div class="mySlides3">
-						<div class="numbertext">4 / 6</div>
 						<img
 							src="./main_page/assets/1802S_Bed.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -741,14 +746,12 @@
 					</div>
 
 					<div class="mySlides3">
-						<div class="numbertext">5 / 6</div>
 						<img
 							src="./main_page/assets/1802S_Bathroom.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
 						/>
 					</div>
 					<div class="mySlides3">
-						<div class="numbertext">6 / 6</div>
 						<img
 							src="./main_page/assets/1802S_Kitchen.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -764,7 +767,6 @@
 				<span class="close cursor" onclick="closeModal4()">&times;</span>
 				<div class="modal-content">
 					<div class="mySlides4">
-						<div class="numbertext">1 / 6</div>
 						<img
 							src="./main_page/assets/s1br3_livng_room.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -772,7 +774,6 @@
 					</div>
 
 					<div class="mySlides4">
-						<div class="numbertext">2 / 6</div>
 						<img
 							src="./main_page/assets/s1br3_living_room2.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -780,7 +781,6 @@
 					</div>
 
 					<div class="mySlides4">
-						<div class="numbertext">3 / 6</div>
 						<img
 							src="./main_page/assets/s1br3_dining_area.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -788,7 +788,6 @@
 					</div>
 
 					<div class="mySlides4">
-						<div class="numbertext">4 / 6</div>
 						<img
 							src="./main_page/assets/s1br3_kitchen.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -796,14 +795,12 @@
 					</div>
 
 					<div class="mySlides4">
-						<div class="numbertext">5 / 6</div>
 						<img
 							src="./main_page/assets/s1br3_1807S_-_Bedroom_WallFrame_2.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
 						/>
 					</div>
 					<div class="mySlides4">
-						<div class="numbertext">6 / 6</div>
 						<img
 							src="./main_page/assets/s1br3_bathroom.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -818,7 +815,6 @@
 				<span class="close cursor" onclick="closeModal5()">&times;</span>
 				<div class="modal-content">
 					<div class="mySlides5">
-						<div class="numbertext">1 / 6</div>
 						<img
 							src="./main_page/assets/3509n-Living Area1.JPG"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -826,7 +822,6 @@
 					</div>
 
 					<div class="mySlides5">
-						<div class="numbertext">2 / 6</div>
 						<img
 							src="./main_page/assets/3509n-Living Area2.JPG"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -834,7 +829,6 @@
 					</div>
 
 					<div class="mySlides5">
-						<div class="numbertext">3 / 6</div>
 						<img
 							src="./main_page/assets/3509n-Dining Area - Copy.JPG"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -842,7 +836,6 @@
 					</div>
 
 					<div class="mySlides5">
-						<div class="numbertext">4 / 6</div>
 						<img
 							src="./main_page/assets/3509n-Kitchen1.JPG"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -850,14 +843,12 @@
 					</div>
 
 					<div class="mySlides5">
-						<div class="numbertext">5 / 6</div>
 						<img
 							src="./main_page/assets/3509N_bedroom.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
 						/>
 					</div>
 					<div class="mySlides5">
-						<div class="numbertext">6 / 6</div>
 						<img
 							src="./main_page/assets/3509n-Bathroom.JPG"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -873,7 +864,6 @@
 				<span class="close cursor" onclick="closeModal6()">&times;</span>
 				<div class="modal-content">
 					<div class="mySlides6">
-						<div class="numbertext">1 / 6</div>
 						<img
 							src="./main_page/assets/3304AS_Living.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -881,7 +871,6 @@
 					</div>
 
 					<div class="mySlides6">
-						<div class="numbertext">2 / 6</div>
 						<img
 							src="./main_page/assets/3304AS_Dining.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -889,7 +878,6 @@
 					</div>
 
 					<div class="mySlides6">
-						<div class="numbertext">3 / 6</div>
 						<img
 							src="./main_page/assets/3304AS_Kitchen.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -897,7 +885,6 @@
 					</div>
 
 					<div class="mySlides6">
-						<div class="numbertext">4 / 6</div>
 						<img
 							src="./main_page/assets/3304AS_Bed.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -905,14 +892,12 @@
 					</div>
 
 					<div class="mySlides6">
-						<div class="numbertext">5 / 6</div>
 						<img
 							src="./main_page/assets/3304AS_Bathroom.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
 						/>
 					</div>
 					<div class="mySlides6">
-						<div class="numbertext">6 / 6</div>
 						<img
 							src="./main_page/assets/3304AS_Laundry.jpg"
 							style="width: 100%; height: 700px; object-fit: contain"
@@ -923,42 +908,53 @@
 					<a class="next" onclick="plusSlides6(1)">&#10095;</a>
 				</div>
 			</div>
+
+			<button onclick="subBarBtn(this.id)" id="myBtn" title="Go to top">
+				Top
+			</button>
 			<!-- end of body -->
 		</div>
 
 		<!-- Script -->
 
 		<script>
+			function scrollFnctiom() {
+				const bodyscrll = document.getElementById("body_container");
+				let bscrll = bodyscrll.scrollTop;
+
+				if (bscrll < 10) {
+					document.getElementById("myBtn").style.display = "block";
+				}
+
+				if (bscrll == 0) {
+					document.getElementById("myBtn").style.display = "none";
+				}
+			}
+
 			function openModal(x) {
 				var v = x;
 				switch (v) {
 					case "myModal":
-						alert(x);
 						document.getElementById("myModal").style.display = "block";
 						break;
 					case "myModal2":
-						alert(x);
 						document.getElementById("myModal2").style.display = "block";
 						break;
 					case "myModal3":
-						alert(x);
 						document.getElementById("myModal3").style.display = "block";
 						break;
 					case "myModal4":
-						alert(x + "sad");
 						document.getElementById("myModal4").style.display = "block";
 						break;
 					case "myModal5":
-						alert(x + "sad");
 						document.getElementById("myModal5").style.display = "block";
 						break;
 					case "myModal6":
-						alert(x + "sad");
 						document.getElementById("myModal6").style.display = "block";
 						break;
 					default:
-						alert(x);
-					//location.href = "SouthOfMarket.html";
+						location.href = "SouthOfMarket.html";
+						break;
 				}
 			}
 			// modal 1
@@ -1151,6 +1147,7 @@
 			}
 			//end of modal
 			//end of modal
+
 			function subBarBtn(x) {
 				var v = x;
 				var sOm_TxtIntro1 = document.getElementById("sOm_TxtIntro1");
@@ -1162,22 +1159,32 @@
 					case "soma_1":
 						sOm_TxtIntro1.scrollIntoView({ behavior: "smooth" });
 						location.href = "SouthOfMarket.html#sOm_TxtIntro1";
+						document.getElementById("myBtn").style.display = "block";
 						break;
 					case "soma_2":
 						sOm_TxtIntro2.scrollIntoView({ behavior: "smooth" });
 						location.href = "SouthOfMarket.html#sOm_TxtIntro2";
+						document.getElementById("myBtn").style.display = "block";
 						break;
 					case "soma_3":
 						sOm_TxtIntro3.scrollIntoView({ behavior: "smooth" });
 						location.href = "SouthOfMarket.html#sOm_TxtIntro3";
+						document.getElementById("myBtn").style.display = "block";
 						break;
 					case "soma_4":
 						sOm_TxtIntro4.scrollIntoView({ behavior: "smooth" });
 						location.href = "SouthOfMarket.html#sOm_TxtIntro4";
+						document.getElementById("myBtn").style.display = "block";
 						break;
 					case "soma_5":
 						sOm_TxtIntro5.scrollIntoView({ behavior: "smooth" });
 						location.href = "SouthOfMarket.html#sOm_TxtIntro5";
+						document.getElementById("myBtn").style.display = "block";
+						break;
+					case "myBtn":
+						top_bar.scrollIntoView({ behavior: "smooth" });
+						document.getElementById("myBtn").style.display = "none";
+						document.getElementById("myBtn").style.display = "block";
 						break;
 					default:
 						location.href = "SouthOfMarket.html";
