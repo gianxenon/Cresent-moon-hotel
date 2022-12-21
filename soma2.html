@@ -20,16 +20,12 @@
 				font-size: 18px;
 				border: none;
 				outline: none;
-				color: white;
 				cursor: pointer;
 				padding: 15px;
 				border-radius: 4px;
 				display: none;
-				background-color: rgb(18, 63, 129);
-			}
-
-			#myBtn:hover {
-				background-color: black;
+				background-color: white;
+				border-radius: 50%;
 			}
 		</style>
 	</head>
@@ -649,9 +645,10 @@
 					<a class="next" onclick="plusSlides4(1)">&#10095;</a>
 				</div>
 			</div>
-			<button onclick="subBarBtn(this.id)" id="myBtn" title="Go to top">
-				Top
-			</button>
+
+			<a onclick="subBarBtn(this.id)" id="myBtn" title="Go to top">
+				<img src="./main_page/assets/backToTop.png" width="44px" />
+			</a>
 		</div>
 
 		<!-- Script -->
@@ -853,7 +850,7 @@
 						document.getElementById("myBtn").style.display = "block";
 						break;
 					case "myBtn":
-						top_bar.scrollIntoView({ behavior: "smooth" });
+						top_bar.scrollIntoView({ behavior: "auto" });
 						document.getElementById("myBtn").style.display = "none";
 						break;
 					default:
