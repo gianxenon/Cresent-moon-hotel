@@ -20,14 +20,15 @@
 				font-size: 18px;
 				border: none;
 				outline: none;
+				color: white;
 				cursor: pointer;
-
-				border-radius: 5px;
+				padding: 15px;
+				border-radius: 4px;
 				display: none;
-				background-color: white;
-				border-radius: 50%;
-				height: 40px;
-				width: 40px;
+				background-color: rgb(18, 63, 129);
+			}
+			#myBtn:hover {
+				background-color: black;
 			}
 		</style>
 	</head>
@@ -648,18 +649,7 @@
 				</div>
 			</div>
 
-			<a onclick="subBarBtn(this.id)" id="myBtn" title="Go to top">
-				<img
-					src="./main_page/assets/backToTop.png"
-					width="25px"
-					style="
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						transform: translate(-50%, -50%);
-					"
-				/>
-			</a>
+			<a onclick="subBarBtn(this.id)" id="myBtn" title="Go to top"> Top </a>
 		</div>
 
 		<!-- Script -->
@@ -708,7 +698,7 @@
 				showSlides((slideIndex += n));
 			}
 
-			function currentSlide(n) {
+			function currentSlide1(n) {
 				showSlides((slideIndex = n));
 			}
 

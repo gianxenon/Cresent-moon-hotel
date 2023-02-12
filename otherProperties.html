@@ -19,14 +19,15 @@
 				font-size: 18px;
 				border: none;
 				outline: none;
+				color: white;
 				cursor: pointer;
-
-				border-radius: 5px;
+				padding: 15px;
+				border-radius: 4px;
 				display: none;
-				background-color: white;
-				border-radius: 50%;
-				height: 40px;
-				width: 40px;
+				background-color: rgb(18, 63, 129);
+			}
+			#myBtn:hover {
+				background-color: black;
 			}
 		</style>
 	</head>
@@ -67,6 +68,21 @@
 						<a class="op_active active" href="otherProperties.html"
 							>OTHER PROPERTIES</a
 						>
+					</li>
+
+					<li
+						class="dropdown_buttons"
+						id="dropdown_buttons"
+						onclick="dropMenus()"
+					>
+						<a class="btn_SouthOfMarket">
+							SALES/RENT
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-contents" id="dropdown-contents">
+							<a class="soma" id="soma" href="forsale.html">FOR SALE</a>
+							<a id="soma" href="soma2.html">FOR RENT</a>
+						</div>
 					</li>
 				</ul>
 				<div id="container_id" class="container" onclick="menuIcon(this)">
@@ -837,18 +853,7 @@
 					<a class="next" onclick="plusSlides5(1)">&#10095;</a>
 				</div>
 			</div>
-			<a onclick="subBarBtn(this.id)" id="myBtn" title="Go to top">
-				<img
-					src="./main_page/assets/backToTop.png"
-					width="25px"
-					style="
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						transform: translate(-50%, -50%);
-					"
-				/>
-			</a>
+			<a onclick="subBarBtn(this.id)" id="myBtn" title="Go to top"> Top </a>
 		</div>
 
 		<!-- Script -->
@@ -1098,6 +1103,22 @@
 				dropdownContent.style.display == "none"
 					? (dropdownContent.style.display = "block")
 					: (dropdownContent.style.display = "none");
+			}
+			function dropMenus() {
+				const dropdownContents = document.getElementById("dropdown-contents");
+				var displayValue = window
+					.getComputedStyle(dropdownContents, null)
+					.getPropertyValue("display");
+				const ds = displayValue;
+				// ds == "none"
+				// 	? (dropdownContents.style.display = "block")
+				// 	: (dropdownContents.style.display = "none");
+				console.log(ds);
+				if (ds === "none") {
+					dropdownContents.style.display = "block";
+				} else {
+					dropdownContents.style.display = "none";
+				}
 			}
 			function myFunction() {
 				var displayss = document.getElementById("inquiry_questioniere");

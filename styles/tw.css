@@ -32,6 +32,25 @@ body {
     overflow-y: auto;
 }
 
+.body_containers {
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 136, 241, 0.733);
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #000
+}
+
+.body_containers {
+    color: #000
+}
+
 .top_bar {
     width: 100%;
     height: 90px;
@@ -155,6 +174,23 @@ body {
     z-index: 1;
 }
 
+.dropdown_buttons .dropdown-contents {
+    display: none;
+    position: absolute;
+    top: 100%;
+    outline: none;
+    background-color: rgba(0, 132, 255, 0.904);
+    /* rgba(0, 132, 255, 0.904) */
+    min-width: 170px;
+    height: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
+
 .column {
     float: left;
     width: 100%;
@@ -186,6 +222,11 @@ body {
 #soma.active {
     background-color: antiquewhite;
     color: #000;
+}
+
+.btn_SouthOfMarket {
+    width: 100%;
+    height: 100%;
 }
 
 .btn_SouthOfMarket.active {
