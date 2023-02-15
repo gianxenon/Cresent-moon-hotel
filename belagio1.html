@@ -28,7 +28,11 @@
 					<li>
 						<a class="btn_home active" href="belagio1.html"> BELLAGIO 1 </a>
 					</li>
-					<li class="dropdown_button" onclick="dropMenu()">
+					<li
+						class="dropdown_button"
+						onclick="dropMenu()"
+						style="cursor: pointer"
+					>
 						<a>
 							SOUTH OF MARKET
 							<i class="fa fa-caret-down"></i>
@@ -41,6 +45,21 @@
 					<li><a href="twoSerendra.html">TWO SERENDRA</a></li>
 					<li>
 						<a href="otherProperties.html">OTHER PROPERTIES</a>
+					</li>
+
+					<li
+						class="dropdown_buttons"
+						id="dropdown_buttons"
+						onclick="dropMenus()"
+					>
+						<a class="btn_SouthOfMarket">
+							SALES/RENT
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-contents" id="dropdown-contents">
+							<a class="soma" id="soma" href="forsale.html">FOR SALE</a>
+							<a id="soma" href="soma2.html">FOR RENT</a>
+						</div>
 					</li>
 				</ul>
 				<div id="container_id" class="container" onclick="menuIcon(this)">
@@ -216,6 +235,42 @@
 		</div>
 
 		<script>
+			function mySAdwasd(x) {
+				const dropdownMenu = document.getElementById("dropdownButton");
+				var ul_class = document.getElementById("ul_class");
+				const dropdownContent = document.getElementById("dropdown-content");
+				const dropdownContents = document.getElementById("dropdown-contents");
+				if (x.matches || x > window.matchMedia("(max-width:1240px)")) {
+					// If media query matches
+					const value = document.getElementById("container_id");
+
+					var displayss = document.getElementById("top_bar");
+
+					if (value.className == "container change") {
+						// alert("im here now");
+						ul_class.style.display = "block";
+						ul_class.style.display = "none";
+						displayss.style.height = "90px";
+						value.classList.toggle("change");
+					} else {
+						displayss.style.display = "90px";
+						ul_class.style.display = "none";
+						dropdownContent.style.display = "none";
+						dropdownContents.style.display = "none";
+					}
+				} else {
+					dropdownContent.style.display = "none";
+					dropdownContents.style.display = "none";
+					ul_class.style.display = "block";
+				}
+			}
+
+			var x = window.matchMedia("(max-width:1240px)");
+
+			mySAdwasd(x); // Call listener function at run time
+
+			x.addListener(mySAdwasd); // Attach listener function on state changes
+
 			function openModal() {
 				document.getElementById("myModal").style.display = "block";
 			}
@@ -249,12 +304,8 @@
 				for (i = 0; i < slides.length; i++) {
 					slides[i].style.display = "none";
 				}
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" active", "");
-				}
+
 				slides[slideIndex - 1].style.display = "block";
-				dots[slideIndex - 1].className += " active";
-				captionText.innerHTML = dots[slideIndex - 1].alt;
 			}
 			//end of modal
 			function dropMenu() {
@@ -262,6 +313,23 @@
 				dropdownContent.style.display == "none"
 					? (dropdownContent.style.display = "block")
 					: (dropdownContent.style.display = "none");
+			}
+
+			function dropMenus() {
+				const dropdownContents = document.getElementById("dropdown-contents");
+				var displayValue = window
+					.getComputedStyle(dropdownContents, null)
+					.getPropertyValue("display");
+				const ds = displayValue;
+				// ds == "none"
+				// 	? (dropdownContents.style.display = "block")
+				// 	: (dropdownContents.style.display = "none");
+				console.log(ds);
+				if (ds === "none") {
+					dropdownContents.style.display = "block";
+				} else {
+					dropdownContents.style.display = "none";
+				}
 			}
 			function myFunction() {
 				var displayss = document.getElementById("inquiry_questioniere");
@@ -286,39 +354,6 @@
 					displayss.style.height = "90px";
 				}
 			}
-
-			function mySAdwasd(x) {
-				const dropdownMenu = document.getElementById("dropdownButton");
-				var ul_class = document.getElementById("ul_class");
-				const dropdownContent = document.getElementById("dropdown-content");
-				if (x.matches) {
-					// If media query matches
-					const value = document.getElementById("container_id");
-
-					var displayss = document.getElementById("top_bar");
-
-					if (value.className == "container change") {
-						// alert("im here now");
-						ul_class.style.display = "block";
-						ul_class.style.display = "none";
-						displayss.style.height = "90px";
-						value.classList.toggle("change");
-					} else {
-						displayss.style.display = "90px";
-						ul_class.style.display = "none";
-						dropdownContent.style.display = "none";
-					}
-				} else {
-					dropdownContent.style.display = "none";
-					ul_class.style.display = "block";
-				}
-			}
-
-			var x = window.matchMedia("(max-width:1240px)");
-
-			mySAdwasd(x);
-
-			x.addListener(mySAdwasd);
 		</script>
 	</body>
 </html>

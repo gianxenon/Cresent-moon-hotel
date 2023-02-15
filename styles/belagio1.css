@@ -55,11 +55,15 @@ body {
     float: left;
     text-align: center;
     margin: 0;
-
+    cursor: pointer;
 }
 
+.btn_SouthOfMarket {
+    cursor: pointer;
+}
 
 .top_bar ul li a {
+    cursor: pointer;
     display: block;
     color: white;
     text-align: center;
@@ -140,6 +144,7 @@ body {
 
 .dropdown_button {
     margin: 0px;
+
 }
 
 
@@ -151,6 +156,28 @@ body {
     background-color: rgba(0, 132, 255, 0.904);
     /* rgba(0, 132, 255, 0.904) */
     min-width: 230px;
+    height: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.dropdown_buttons {
+    margin: 0px;
+}
+
+.dropdown_buttons .dropdown-contents {
+
+    position: absolute;
+    top: 100%;
+    outline: none;
+    background-color: rgba(0, 132, 255, 0.904);
+    /* rgba(0, 132, 255, 0.904) */
+    display: none;
+    min-width: 170px;
     height: fit-content;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     margin: 0px;

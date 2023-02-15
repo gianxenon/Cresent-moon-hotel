@@ -53,6 +53,20 @@
 					<li>
 						<a href="otherProperties.html">OTHER PROPERTIES</a>
 					</li>
+					<li
+						class="dropdown_buttons"
+						id="dropdown_buttons"
+						onclick="dropMenus()"
+					>
+						<a class="btn_SouthOfMarket">
+							SALES/RENT
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-contents" id="dropdown-contents">
+							<a class="soma" id="soma" href="forsale.html">FOR SALE</a>
+							<a id="soma" href="forRent.html">FOR RENT</a>
+						</div>
+					</li>
 				</ul>
 				<div id="container_id" class="container" onclick="menuIcon(this)">
 					<div class="bar1"></div>
@@ -179,6 +193,22 @@
 				dropdownContent.style.display == "none"
 					? (dropdownContent.style.display = "block")
 					: (dropdownContent.style.display = "none");
+			}
+			function dropMenus() {
+				const dropdownContents = document.getElementById("dropdown-contents");
+				var displayValue = window
+					.getComputedStyle(dropdownContents, null)
+					.getPropertyValue("display");
+				const ds = displayValue;
+				// ds == "none"
+				// 	? (dropdownContents.style.display = "block")
+				// 	: (dropdownContents.style.display = "none");
+				console.log(ds);
+				if (ds === "none") {
+					dropdownContents.style.display = "block";
+				} else {
+					dropdownContents.style.display = "none";
+				}
 			}
 			function myFunction() {
 				var displayss = document.getElementById("inquiry_questioniere");

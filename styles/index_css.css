@@ -152,6 +152,28 @@ body {
     z-index: 1;
 }
 
+.dropdown_buttons {
+    margin: 0px;
+}
+
+.dropdown_buttons .dropdown-contents {
+
+    position: absolute;
+    top: 100%;
+    outline: none;
+    background-color: rgba(0, 132, 255, 0.904);
+    /* rgba(0, 132, 255, 0.904) */
+    display: none;
+    min-width: 170px;
+    height: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
+
 
 #soma {
     height: fit-content;
