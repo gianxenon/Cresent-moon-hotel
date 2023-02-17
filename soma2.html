@@ -79,6 +79,20 @@
 					<li>
 						<a href="otherProperties.html">OTHER PROPERTIES</a>
 					</li>
+					<li
+						class="dropdown_buttons"
+						id="dropdown_buttons"
+						onclick="dropMenus()"
+					>
+						<a class="btn_SouthOfMarket">
+							SALES/RENT
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-contents" id="dropdown-contents">
+							<a class="soma" id="soma" href="forsale.html">FOR SALE</a>
+							<a id="soma" href="soma2.html">FOR RENT</a>
+						</div>
+					</li>
 				</ul>
 				<div id="container_id" class="container" onclick="menuIcon(this)">
 					<div class="bar1"></div>
@@ -865,6 +879,23 @@
 					? (dropdownContent.style.display = "block")
 					: (dropdownContent.style.display = "none");
 			}
+
+			function dropMenus() {
+				const dropdownContents = document.getElementById("dropdown-contents");
+				var displayValue = window
+					.getComputedStyle(dropdownContents, null)
+					.getPropertyValue("display");
+				const ds = displayValue;
+				// ds == "none"
+				// 	? (dropdownContents.style.display = "block")
+				// 	: (dropdownContents.style.display = "none");
+				console.log(ds);
+				if (ds === "none") {
+					dropdownContents.style.display = "block";
+				} else {
+					dropdownContents.style.display = "none";
+				}
+			}
 			function myFunction() {
 				var displayss = document.getElementById("inquiry_questioniere");
 				if (displayss.style.display == "none") {
@@ -893,6 +924,7 @@
 				const dropdownMenu = document.getElementById("dropdownButton");
 				var ul_class = document.getElementById("ul_class");
 				const dropdownContent = document.getElementById("dropdown-content");
+				const dropdownContents = document.getElementById("dropdown-contents");
 				if (x.matches) {
 					// If media query matches
 					const value = document.getElementById("container_id");
@@ -909,9 +941,11 @@
 						displayss.style.display = "90px";
 						ul_class.style.display = "none";
 						dropdownContent.style.display = "none";
+						dropdownContents.style.display = "none";
 					}
 				} else {
 					dropdownContent.style.display = "none";
+					dropdownContents.style.display = "none";
 					ul_class.style.display = "block";
 				}
 			}
